@@ -196,7 +196,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/rolTokens.json'),
         'abiList': require('./abiDefinitions/rolAbi.json'),
         'estimateGas': true,
-        'service': 'expanse.tech',
+        'service': 'localhost',
         'lib': new nodes.customNode('http://127.0.0.1/', '')
     },
     'exp': {

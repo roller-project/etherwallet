@@ -6,6 +6,7 @@ nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
     ETH: "ETH",
     ETC: "ETC",
+    ROL: "ROL",
     MUS: "MUSIC",
     Ropsten: "ROPSTEN ETH",
     Kovan: "KOVAN ETH",
@@ -184,6 +185,19 @@ nodes.nodeList = {
         'abiList': require('./abiDefinitions/rinkebyAbi.json'),
         'service': 'infura.io',
         'lib': new nodes.infuraNode('https://rinkeby.infura.io/mew')
+    },
+    'rol': {
+        'name': 'ROL',
+        'blockExplorerTX': 'http://explorer.roller.today:3000/tx/[[txHash]]',
+        'blockExplorerAddr': 'http://explorer.roller.today:3000/addr/[[address]]',
+        'type': nodes.nodeTypes.ROL,
+        'eip155': true,
+        'chainId': 2,
+        'tokenList': require('./tokens/rolTokens.json'),
+        'abiList': require('./abiDefinitions/rolAbi.json'),
+        'estimateGas': true,
+        'service': 'expanse.tech',
+        'lib': new nodes.customNode('http://127.0.0.1/', '')
     },
     'exp': {
         'name': 'EXP',

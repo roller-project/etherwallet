@@ -67,12 +67,12 @@ ENS_WrongAddress_1              :  'The wallet you unlocked does not own the nam
 ENS_WrongAddress_2              :  'Please unlock the wallet with address ',
 
 ENS_Finalize                    :  'Finalize',
-ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH. Any non-winners will also be refunded.',
+ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH. Any non-winners will also be refunded.',
 ENS_Finalize_content_1          :  'You are about to finalize the auction & claim the name:',
 ENS_Helper_1                    :  'What is the process like?',
 ENS_Helper_2                    :  '1) Preparation',
-ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure you have multiple backups of that account.',
-ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.',
+ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure that you have multiple backups of that account.',
+ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that the account has enough to cover your bid + 0.01 ETH for gas.',
 ENS_Helper_5                    :  '2) Start an Auction / Place a Bid',
 ENS_Helper_6                    :  'Bidding period lasts 3 days (72 hours).',
 ENS_Helper_7                    :  'You will enter the <u>name</u>, <u>Actual Bid Amount</u>, <u>Bid Mask</u>, which is protected by a <u>Secret Phrase</u>.',
@@ -84,7 +84,7 @@ ENS_Helper_12                   :  'You will unlock your account, enter the <u>B
 ENS_Helper_13                   :  'In the event that two parties bid exactly the same amount, the first bid revealed will win.',
 ENS_Helper_14                   :  '4) Finalize the Auction',
 ENS_Helper_15                   :  'Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.',
-ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.',
+ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH.',
 ENS_Helper_17                   :  'More Information',
 ENS_Helper_18                   :  'The auction for this registrar is a blind auction, and is described in',
 ENS_Helper_19                   :  'Basically, no one can see *anything* during the auction.',
@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send roller & Tokens Page',
+EOS_06                          :  'Go to Send Ether & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -128,7 +128,7 @@ ONBOARD_interface_content__2    :  'The handling of your keys happens entirely o
 ONBOARD_interface_content__3    :  'We never transmit, receive or store your private key, password, or other account information.',
 ONBOARD_interface_content__4    :  'We do not charge a transaction fee.',
 ONBOARD_interface_content__5    :  'You are simply using our **interface** to interact **directly with the blockchain**.',
-ONBOARD_interface_content__6    :  'If you send your *public key (address)* to someone, they can send you AKA or tokens. 👍',
+ONBOARD_interface_content__6    :  'If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍',
 ONBOARD_interface_content__7    :  'If you send your *private key* to someone, they now have full control of your account. 👎',
 ONBOARD_bank_title__alt         :  'MEW isn\'t a Bank',
 ONBOARD_blockchain_title__alt   :  'WTF is a Blockchain?',
@@ -167,8 +167,8 @@ ONBOARD_secure_title            :  'How To Protect Yourself & Your Funds',
 ONBOARD_secure_1_title          :  'How To Protect Yourself from Phishers',
 ONBOARD_secure_1_content__1     :  'Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.',
 ONBOARD_secure_1_content__2     :  'Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.',
-ONBOARD_secure_1_content__3     :  'Always check the URL: `https://mew.roller.today`.',
-ONBOARD_secure_1_content__4     :  'Always make sure the URL bar has `MYETHERWALLET LLC [US]` in green.',
+ONBOARD_secure_1_content__3     :  'Always check the URL: `https://www.myetherwallet.com`.',
+ONBOARD_secure_1_content__4     :  'Always make sure the URL bar has `MYETHERWALLET INC` in green.',
 ONBOARD_secure_1_content__5     :  'Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.',
 ONBOARD_secure_1_content__6     :  'Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.',
 ONBOARD_secure_1_content__7     :  '[Install an AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) and do not click ads on your search engine (e.g. Google).',
@@ -360,7 +360,7 @@ BULK_Label_1: 'تعداد کیف پول هایی که می خواهید بساز
 BULK_Label_2: 'ساخت کیف پول ها ',
 BULK_SuccessMsg: 'ساخت کیف پول های شما با موفقیت انجام شد. ',
 
-/* Sending roller and Tokens */
+/* Sending Ether and Tokens */
 
 SEND_addr: 'به آدرس ',
 SEND_amount: 'مقدار ارسالی ',
@@ -465,7 +465,7 @@ SWAP_progress_3: 'Received! , // ETH Received!',
 SWAP_progress_4: 'Sending your {{orderResult.output.currency}} ,',
 SWAP_progress_5: 'Order Complete ,',
 SWAP_order_CTA: 'Please send , // Please send 1 ETH...',
-SWAP_unlock: 'Unlock your wallet to send AKA or Tokens directly from this page. ',
+SWAP_unlock: 'Unlock your wallet to send ETH or Tokens directly from this page. ',
 
 /* Sign Message */
 NAV_SignMsg: 'امضای پیام ',
@@ -517,7 +517,7 @@ ERROR_23                        :  '(error_24) لطفا یک پورت معتبر
 ERROR_24                        :  '(error_25) لطفا آیدی زنجیره معتبر وارد کنید Please enter a valid port.', // 24
 ERROR_25                        :  '(error_26) لطفا ABI معتبر وارد کنید Please enter a valid chain ID.', // 25
 ERROR_26                        :  '(error_27) کمترین مقدار: 0.01 ، بیشترین مقدار: Please enter a valid ABI.', // 26
-ERROR_27                        :  '(error_28) برای دسترسی به این کیف پول در آینده به فایل Keystore و رمزعبور خود (یا کلید خصوصی) نیاز خواهید داشت. لطفا آن را ذخیره کنید و یک نسخه پشتیبان خارجی بسازید. اگر آن را ذخیره نکنید، هیچ راهی برای بازگرداندن کیف پول وجود ندارد. برای راهنمایی [صفحه کمک](https://mew.roller.today/#help)  را مطالعه بفرمایید. Minimum amount: 0.01. Max amount:', // 27
+ERROR_27                        :  '(error_28) برای دسترسی به این کیف پول در آینده به فایل Keystore و رمزعبور خود (یا کلید خصوصی) نیاز خواهید داشت. لطفا آن را ذخیره کنید و یک نسخه پشتیبان خارجی بسازید. اگر آن را ذخیره نکنید، هیچ راهی برای بازگرداندن کیف پول وجود ندارد. برای راهنمایی [صفحه کمک](https://www.myetherwallet.com/#help)  را مطالعه بفرمایید. Minimum amount: 0.01. Max amount:', // 27
 ERROR_28                        :  '(error_29) لطفا شناسه و رمزعبور معتبر وارد کنید You need this `Keystore File + Password` or the `Private Key` (next page) to access this wallet in the future. ', // 28
 ERROR_29                        :  '(error_30) لطفا نام ENS معتبر وارد کنید Please enter a valid user and password.', // 29
 ERROR_30                        :  '(error_31) عبارت خصوصی نامعتبر است Please enter a valid name (7+ characters, limited punctuation)', // 30
@@ -588,7 +588,7 @@ HELP_Remind_Desc_2: 'گزینه هایی مثل MyEtherWallet.com و MyWtherWall
 HELP_Remind_Desc_3: 'اگر رمز عبور و کلید خصوصی خود را ذخیره نکنید، هیچ راهی برای دسترسی دوباره به کیف پول خود و سرمایه موجود در آن نخواهید داشت. از آن ها در مکان های فیزیکی مختلف (نه فقط در کامپیوتر خود) چندین نسخه پشتیبان تهیه کنید. ',
 
 HELP_0_Title: 'سوال 0: من تازه کار هستم. چگونه شروع کنم؟ ',
-HELP_0_Desc_1: 'وبسایت MyEtherWallet به شما امکان ساخت کیف پول های جدید جهت ذخیره اتر (roller)خود در آن را برای شما فراهم می کند تا دیگر نیازی به ذخیره سرمایه خود در یک صرافی نداشته باشید. این فرآیند بطور کامل بر روی کامپیوتر شما، و نه بر روی سرورها، انجام می شود. به همین خاطر زمانی که یک کیف پول جدید می سازید، **خودتان مسئول ایجاد یک نسخه پشتیبان از آن هستید**. ',
+HELP_0_Desc_1: 'وبسایت MyEtherWallet به شما امکان ساخت کیف پول های جدید جهت ذخیره اتر (Ether)خود در آن را برای شما فراهم می کند تا دیگر نیازی به ذخیره سرمایه خود در یک صرافی نداشته باشید. این فرآیند بطور کامل بر روی کامپیوتر شما، و نه بر روی سرورها، انجام می شود. به همین خاطر زمانی که یک کیف پول جدید می سازید، **خودتان مسئول ایجاد یک نسخه پشتیبان از آن هستید**. ',
 HELP_0_Desc_2: 'ایجاد یک کیف پول جدید ',
 HELP_0_Desc_3: 'از کیف پول نسخه پشتیبان تهیه کنید ',
 HELP_0_Desc_4: 'تایید کنید که به این کیف پول جدید دسترسی دارید و تمام اطلاعات لازم را ذخیره کرده اید. ',
@@ -758,7 +758,7 @@ HELP_15_Title: 'سوال 15: چرا حسابی که همین الان ساخته
 HELP_15_Desc_1: 'HELP_15_Desc_1',
 
 HELP_16_Title: 'سوال 16: چگونه موجودی حساب خود را ببینم؟ ',
-HELP_16_Desc_1: 'برای این کار می توانید از یک مرورگر بلاکچین مثل  [etherscan.io](https://etherscan.io/) استفاده کنید. آدرس خود را در قسمت search (جستجو) وارد کنید و بعد می توانید آدرس و سابقه تراکنش های خود را مشاهده کنید. برای مثال حساب اهدایی ما [بدین صورت](https://etherscan.io/address/0x7cb57b5a97eabe94205c07890be4c1ad31e486a8) است. ',
+HELP_16_Desc_1: 'برای این کار می توانید از یک مرورگر بلاکچین مثل  [etherscan.io](https://etherscan.io/) استفاده کنید. آدرس خود را در قسمت search (جستجو) وارد کنید و بعد می توانید آدرس و سابقه تراکنش های خود را مشاهده کنید. برای مثال حساب اهدایی ما [بدین صورت](https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D) است. ',
 
 HELP_17_Title: 'سوال 17: چرا زمانی که قفل کیف پول خود را باز می کنم موجودی من نمایش داده نمی شود؟ ',
 HELP_17_Desc_1: 'این موضوع احتمالا بخاطر این است که شما پشت یک firewall (دیوار آتشین) هستید. API که ما برای بدست آوردن موجودی استفاده می کنیم به دلایلی معمولا توسط فایر وال ها بلاک می شوند. شما همچنان می توانید تراکنش هایتان را ارسال کنید و برای دیدن موجودی خود تنها باید از راه دیگری (مثل etherscan.io) استفاده کنید. ',
@@ -793,7 +793,7 @@ HELP_Sec_Title: 'امنیت ',
 HELP_Sec_Desc_1: 'ممکن است یکی از اولین سوالاتی که به ذهنتان می رسد این باشد که ""چرا باید به این افراد اعتماد کنم؟""؛ این سوال خوبی ست که ادامه می توانید جوابی برای آن جهت کم کردن ترس خود پیدا کنید. ',
 HELP_Sec_Desc_2: 'ما از آگوست 2015 در حال فعالیت هستیم. اگر در [reddit](https://www.reddit.com/search?q=myetherwallet) بدنبال myetherwallet بگردید، تعداد زیادی از کاربران را خواهید دید که از سرویس ما با موفقیت استفاده کرده اند.  ',
 HELP_Sec_Desc_3: 'ما نمی خواهیم که پول شما را بگیریم و یا کلیدهای خصوصی شما را بدزدیم. هیچ کد خرابی در این سایت وجود ندارد. در واقع صفحه های ""ایجاد کیف پول"" در سمت کاربر هستند (client-side). این بدان معناست که تمام کدها بر روی کامپیوتر خود شما اجرا می شود و هرگز جای دیگری ارسال و یا ذخیره نمی شود. ',
-HELP_Sec_Desc_4: 'این سایت از طریق GitHub ارائه می شود، می توانید کد اصلی یا Source Code آن را در این آدرس ببینید:  [https://github.com/kvhnuke/etherwallet/tree/gh-](https://github.com/kvhnuke/etherwallet/tree/gh-pages) و [https://mew.roller.today](https://mew.roller.today). ',
+HELP_Sec_Desc_4: 'این سایت از طریق GitHub ارائه می شود، می توانید کد اصلی یا Source Code آن را در این آدرس ببینید:  [https://github.com/kvhnuke/etherwallet/tree/gh-](https://github.com/kvhnuke/etherwallet/tree/gh-pages) و [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
 HELP_Sec_Desc_5: 'برای ایجاد کیف پول، می توانید کد منبع را دانلود کنید و آن را بصورت محلی اجرا کنید. به سوال شماره 5 مراجعه کنید. (https://github.com/kvhnuke/etherwallet/releases/latest) ',
 HELP_Sec_Desc_6: 'یک کیف پول تستی بسازید و به بررسی فعالیت شبکه بپردازید. ساده ترین راه این است که بر روی سایت کلیک راست کرده و گزینه ""inspect element"" را انتخاب کنید. به قسمت ""Network"" بروید. یک کیف پول آزمایشی بسازید. خواهید دید که هیچ فعالیت شبکه ای در آن جا رخ نمی دهد. خواهید دید که اتفاقی در حال رخداد است که همانند داده هایی مثل عکس یا گیف هستند. آن ها کدهای QR هستند که در حال ساخته شدن بر روی کامپیوتر شما و توسط کامپیوتر شما هستند. هیچ بایتی جابجا نمی شود. ',
 HELP_Sec_Desc_8: 'اگر با استفاده از این ابزار راحت نیستید آن را کنار بگذارید. ما این ابزار را بعنوان یک راه موثر جهت ایجاد کیف پول و تراکنش بدون نیاز به اجرای یک فول نود یا رفتن به خط فرمان درست کرده ایم. در هر صورت اگر سوالی ذهن شما را به خود مشغول کرده می توانید با ما در ارتباط باشید و ما نیز در اولین فرصت پاسخگوی شما خواهیم بود. با تشکر از توجه شما ',

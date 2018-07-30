@@ -53,8 +53,8 @@
 
 
   <!-- Slider Thingy -->
-  <!-- Hardware Wallets (future) -->
-  <!-- <a href="https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html"
+  <!-- Hardware Wallets -->
+  <a href="https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html"
      ng-show="slide==1 || ajaxReq.type!=='ETH'"
      class="block swap--hw"
      target="_blank" rel="noopener noreferrer">
@@ -73,10 +73,27 @@
       <br />
       <img src="images/logo-trezor.svg" width="80" height="auto" class="swap__logo">
     </div>
-  </a> -->
+  </a>
 
-  <!-- Coinbase (consider ref codes) -->
-  <!-- <a href="https://buy.coinbase.com?code=a6e1bd98-6464-5552-84dd-b27f0388ac7d&address={{wallet.getChecksumAddressString()}}&crypto_currency=ETH&currency=USD"
+  <!-- Bity -->
+  <a ng-click="globalService.currentTab=globalService.tabs.swap.id"
+     ng-show="ajaxReq.type=='ETH' && slide==2"
+     class="block swap--btc"
+     target="_blank" rel="noopener noreferrer">
+    <div class="col-sm-7">
+      <p class="swap__subhead" ng-show="wallet.balance<=0">Aw...you don't have any ETH.</p>
+      <p class="swap__subhead" ng-show="wallet.balance>0&&wallet.balance<50">It's now easier to get more ETH</p>
+      <p class="swap__subhead" ng-show="wallet.balance>50">It's now easier to move between ETH &amp; BTC</p>
+      <h5 class="swap__cta">Swap BTC <-> ETH</h5>
+    </div>
+    <div class="col-sm-5">
+      <img src="images/logo-bity-white.svg" width="60" height="auto" class="swap__logo">
+      <p class="swap-flag--price">1 ETH ≈ <br /> {{wallet.btcPrice}} BTC</p>
+    </div>
+  </a>
+
+  <!-- Coinbase
+  <a href="#"
      ng-show="ajaxReq.type=='ETH' && slide==2"
      class="block swap--usd"
      target="_blank" rel="noopener noreferrer">
@@ -89,7 +106,15 @@
       <img src="images/logo-coinbase.svg" width="64" height="auto" class="swap__logo">
       <p class="swap-flag--price">1 ETH ≈ <br /> {{wallet.usdPrice}} USD</p>
     </div>
-  </a> -->
+  </a>
+  -->
+
+  <div class="swap__nav" ng-show="ajaxReq.type=='ETH'">
+    <a ng-click="slide=1"> &bull; </a>
+    <a ng-click="slide=2"> &bull; </a>
+  </div>
+
+
 
 
   <!-- Token Balances -->
@@ -150,7 +175,7 @@
     <div class="custom-token-fields" ng-show="customTokenField">
       <div class="row">
         <address-field
-          placeholder="{{ ajaxReq.type=='ETH' ? 'mewsupport.eth' : '0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8' }}"
+          placeholder="{{ ajaxReq.type=='ETH' ? 'mewtopia.eth' : '0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D' }}"
           var-name="localToken.contractAdd"
           labelTranslated="TOKEN_Addr">
         </address-field>

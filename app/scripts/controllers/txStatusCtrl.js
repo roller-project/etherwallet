@@ -42,7 +42,7 @@ var txStatusCtrl = function($scope) {
                 from: ethUtil.toChecksumAddress(tx.from),
                 to: tx.to ? ethUtil.toChecksumAddress(tx.to) : '',
                 value: new BigNumber(tx.value).toString(),
-                valueStr: etherUnits.toEther(tx.value, 'wei') + " roller",
+                valueStr: etherUnits.toEther(tx.value, 'wei') + " ETH",
                 gasLimit: new BigNumber(tx.gas).toString(),
                 gasPrice: {
                     wei: new BigNumber(tx.gasPrice).toString(),
@@ -58,7 +58,7 @@ var txStatusCtrl = function($scope) {
                 $scope.parentTxConfig = {
                     to: $scope.txInfo.from,
                     value: '0',
-                    sendMode: 'trinity',
+                    sendMode: 'ether',
                     tokensymbol: '',
                     readOnly: false,
                     gasPrice: _gasPrice.toString(),

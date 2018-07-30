@@ -5,7 +5,6 @@
       ng-cloak>
 
   <article class="block__wrap gen__1" ng-show="!wallet && !showGetAddress">
-
     <section class="block__main gen__1--inner">
       <br />
       <h1 translate="NAV_GenerateWallet" aria-live="polite">
@@ -21,7 +20,8 @@
              placeholder="{{'GEN_Placeholder_1' | translate }}"
              ng-model="password"
              ng-class="isStrongPass() ? 'is-valid' : 'is-invalid'"
-             aria-label="{{'GEN_Label_1' | translate}}"/>
+             aria-label="{{'GEN_Label_1' | translate}}"
+             />
         <span tabindex="0"
               aria-label="make password visible"
               role="button"
@@ -36,20 +36,28 @@
          translate="NAV_GenerateWallet">
            Generate Wallet
       </a>
+      @@include('./apple-mobile-modal.tpl', { "site": "" } )
       <p translate="x_PasswordDesc"></p>
       <div class="text-center">
         <strong>
-          <a href="https://github.com/roller-project/roller-wallet-web/wiki/How-to-Create-a-Wallet"
+          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/creating-a-new-wallet-on-myetherwallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="GEN_Help_5">
                How to Create a Wallet
           </a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/getting-started-new.html"
+             target="_blank"
+             rel="noopener noreferrer"
+             translate="GEN_Help_6">
+               Getting Started
+          </a>
         </strong>
       </div>
       <br>
     </section>
-<!-- 
+
     <section class="block__help">
 
       <h2 translate="GEN_Help_0">
@@ -60,7 +68,7 @@
         <li>
           <p>
             <strong>
-              Ledger / TREZOR / Digital Bitbox
+              Ledger / TREZOR / Digital Bitbox / Secalot
             </strong>:
             <span translate="GEN_Help_1">
               Use your
@@ -130,7 +138,7 @@
         </li>
       </ul>
 
-    </section> -->
+    </section>
 
   </article>
 
@@ -150,7 +158,7 @@
          aria-label="{{'x_Download'|translate}} {{'x_Keystore'|translate}}"
          aria-describedby="x_KeystoreDesc"
          ng-click="downloaded()"
-         target="_blank" rel="noopener noreferrer">
+         rel="noopener noreferrer">
         <span translate="x_Download">
           DOWNLOAD
         </span>
@@ -337,5 +345,4 @@
     </div>
 
   </article>
-
 </main>

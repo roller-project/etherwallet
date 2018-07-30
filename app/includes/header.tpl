@@ -8,7 +8,7 @@
 <meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
-<link href="https://mew.roller.today" rel="canonical">
+<link href="https://mew.roller.today/" rel="canonical">
 <meta content="https://mew.roller.today" property="og:url">
 <meta content="https://mew.roller.today" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">

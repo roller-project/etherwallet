@@ -9,16 +9,16 @@ nodes.nodeTypes = {
 nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
 nodes.nodeList = {
     'eth_mew': {
-        'name': 'PIRL',
+        'name': 'ROL',
         'blockExplorerTX': 'https://poseidon.pirl.io/explorer/transaction/[[txHash]]',
         'blockExplorerAddr': 'https://poseidon.pirl.io/explorer/address/[[address]]',
         'type': nodes.nodeTypes.ETH,
         'eip155': true,
-        'chainId': 3125659152,
+        'chainId': 29021982,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'MyPirlWallet',
-        'lib': new nodes.customNode('https://wallrpc.pirl.io', '')
+        'service': 'Roller Wallet',
+        'lib': new nodes.customNode('https://node.roller.today', '')
     }
 };
 

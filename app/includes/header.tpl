@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>MyEtherWallet.com</title>
+<title>Roller Wallet</title>
 <meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
-<link href="https://www.myetherwallet.com" rel="canonical">
-<meta content="https://www.myetherwallet.com" property="og:url">
-<meta content="https://www.myetherwallet.com" name="twitter:url">
+<link href="http://www.mew.roller.today" rel="canonical">
+<meta content="http://www.mew.roller.today" property="og:url">
+<meta content="http://www.mew.roller.today" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
@@ -46,19 +46,19 @@
 {
 "@context": "http://schema.org",
 "@type" : "Organization",
-"name" : "MyEtherWallet",
+"name" : "Roller Wallet",
 "legalName" : "MyEtherWallet Inc",
-"url" : "https://www.myetherwallet.com/",
+"url" : "https://www.roller.today/",
 "contactPoint" : [{
   "@type" : "ContactPoint",
-  "email" : "support@myetherwallet.com",
-  "url"   : "https://myetherwallet.com",
+  "email" : "support@roller.today",
+  "url"   : "http://mew.roller.today",
   "contactType" : "customer service"
 }],
-"logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
+"logo" : "http://roller.today/template/default/image/logo.png",
 "description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
 "sameAs" : [
-  "https://www.myetherwallet.com/",
+  "https://www.roller.today.com/",
   "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
   "https://www.facebook.com/MyEtherWallet/",
   "https://twitter.com/myetherwallet",

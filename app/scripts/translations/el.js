@@ -67,12 +67,12 @@ ENS_WrongAddress_1              :  'The wallet you unlocked does not own the nam
 ENS_WrongAddress_2              :  'Please unlock the wallet with address ',
 
 ENS_Finalize                    :  'Finalize',
-ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH. Any non-winners will also be refunded.',
+ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH. Any non-winners will also be refunded.',
 ENS_Finalize_content_1          :  'You are about to finalize the auction & claim the name:',
 ENS_Helper_1                    :  'What is the process like?',
 ENS_Helper_2                    :  '1) Preparation',
-ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure you have multiple backups of that account.',
-ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.',
+ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure that you have multiple backups of that account.',
+ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that the account has enough to cover your bid + 0.01 ETH for gas.',
 ENS_Helper_5                    :  '2) Start an Auction / Place a Bid',
 ENS_Helper_6                    :  'Bidding period lasts 3 days (72 hours).',
 ENS_Helper_7                    :  'You will enter the <u>name</u>, <u>Actual Bid Amount</u>, <u>Bid Mask</u>, which is protected by a <u>Secret Phrase</u>.',
@@ -84,7 +84,7 @@ ENS_Helper_12                   :  'You will unlock your account, enter the <u>B
 ENS_Helper_13                   :  'In the event that two parties bid exactly the same amount, the first bid revealed will win.',
 ENS_Helper_14                   :  '4) Finalize the Auction',
 ENS_Helper_15                   :  'Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.',
-ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.',
+ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH.',
 ENS_Helper_17                   :  'More Information',
 ENS_Helper_18                   :  'The auction for this registrar is a blind auction, and is described in',
 ENS_Helper_19                   :  'Basically, no one can see *anything* during the auction.',
@@ -99,7 +99,7 @@ EOS_02                          :  '**Register / Map your EOS Key**',
 EOS_03                          :  'Select `register`',
 EOS_04                          :  'Enter your **EOS Public Key** <--- CAREFUL! EOS PUBLIC KEY!',
 EOS_05                          :  'Fund EOS Contract on Send Page',
-EOS_06                          :  'Go to Send Akroma & Tokens Page',
+EOS_06                          :  'Go to Send Ether & Tokens Page',
 EOS_07                          :  'Unlock same wallet you are unlocking here.',
 EOS_08                          :  'Send Amount you want to Contribute to `0xd0a6E6C54DbC68Db5db3A091B171A77407Ff7ccf`',
 EOS_09                          :  'Claim EOS Tokens',
@@ -128,7 +128,7 @@ ONBOARD_interface_content__2    :  'The handling of your keys happens entirely o
 ONBOARD_interface_content__3    :  'We never transmit, receive or store your private key, password, or other account information.',
 ONBOARD_interface_content__4    :  'We do not charge a transaction fee.',
 ONBOARD_interface_content__5    :  'You are simply using our **interface** to interact **directly with the blockchain**.',
-ONBOARD_interface_content__6    :  'If you send your *public key (address)* to someone, they can send you AKA or tokens. 👍',
+ONBOARD_interface_content__6    :  'If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍',
 ONBOARD_interface_content__7    :  'If you send your *private key* to someone, they now have full control of your account. 👎',
 ONBOARD_bank_title__alt         :  'MEW isn\'t a Bank',
 ONBOARD_blockchain_title__alt   :  'WTF is a Blockchain?',
@@ -167,8 +167,8 @@ ONBOARD_secure_title            :  'How To Protect Yourself & Your Funds',
 ONBOARD_secure_1_title          :  'How To Protect Yourself from Phishers',
 ONBOARD_secure_1_content__1     :  'Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.',
 ONBOARD_secure_1_content__2     :  'Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.',
-ONBOARD_secure_1_content__3     :  'Always check the URL: `https://wallet.akroma.io`.',
-ONBOARD_secure_1_content__4     :  'Always make sure the URL bar has `MYETHERWALLET LLC [US]` in green.',
+ONBOARD_secure_1_content__3     :  'Always check the URL: `https://www.myetherwallet.com`.',
+ONBOARD_secure_1_content__4     :  'Always make sure the URL bar has `MYETHERWALLET INC` in green.',
 ONBOARD_secure_1_content__5     :  'Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.',
 ONBOARD_secure_1_content__6     :  'Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.',
 ONBOARD_secure_1_content__7     :  '[Install an AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) and do not click ads on your search engine (e.g. Google).',
@@ -259,7 +259,7 @@ GEN_Unlock                  : 'Ξεκλειδώστε το πορτοφόλι σ
 GAS_PRICE_Desc              : 'Η τιμή αερίου είναι το ποσό που πληρώνετε ανά μονάδα αερίου. `τέλος συναλλαγής = τιμή αερίου * όριο αερίου` & πληρώνεται στους μεταλλωρύχους για να συμπεριλάβουν τη συναλλαγή σας σε ένα μπλοκ. Υψηλότερη τιμή αερίου = ταχύτερη συναλλαγή, αλλά πιο ακριβή. Η προεπιλογή είναι `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Το όριο αερίου είναι το ποσό αερίου που θα σταλεί με τη συναλλαγή σας. `τέλος συναλλαγής` = τιμή αερίου * όριο αερίου & πληρώνεται στους μεταλλωρύχους για να συμπεριλάβουν τη συναλλαγή σας σε ένα μπλοκ. Το να αυξήσετε αυτόν τον αριθμό δεν θα κάνει τη συναλλαγή σας να εξορυχθεί ταχύτερα. Αποστολή ETH = `21000`. Αποστολή μαρκών = ~`200000`.',
 NONCE_Desc                  : 'Το nonce είναι ο αριθμός των συναλλαγών που αποστέλλονται από δεδομένη διεύθυνση. Εξασφαλίζει ότι οι συναλλαγές αποστέλλονται με τη σειρά και όχι περισσότερες από μία φορές.',
-TXFEE_Desc                  : 'Το τέλος συναλλαγής πληρώνεται στους μεταλλωρύχους για να συμπεριλάβουν τη συναλλαγή σας σε ένα μπλοκ. Είναι το `όριο αερίου` * `τιμή αερίου`. [Μπορείτε να μετατρέψετε GWEI -> ETH εδώ](https://wallet.akroma.io/helpers.html)',
+TXFEE_Desc                  : 'Το τέλος συναλλαγής πληρώνεται στους μεταλλωρύχους για να συμπεριλάβουν τη συναλλαγή σας σε ένα μπλοκ. Είναι το `όριο αερίου` * `τιμή αερίου`. [Μπορείτε να μετατρέψετε GWEI -> ETH εδώ](https://www.myetherwallet.com/helpers.html)',
 
 
 
@@ -381,7 +381,7 @@ BULK_Label_1                : 'Αριθμός πορτοφολιών για δη
 BULK_Label_2                : 'Δημιουργία πορτοφολιών ',
 BULK_SuccessMsg             : 'Επιτυχία! Τα πορτοφόλια σας δημιουργήθηκαν. ',
 
-/* Sending Akroma and Tokens */
+/* Sending Ether and Tokens */
 SEND_addr                   : 'Προς διεύθυνση ',
 SEND_amount                 : 'Ποσό για αποστολή ',
 SEND_amount_short           : 'Ποσό ',
@@ -514,7 +514,7 @@ SWAP_rec_add                : "Η διεύθυνση λήψης σας ",
 SWAP_start_CTA              : "Έναρξη ανταλλαγής ",
 SWAP_ref_num                : "Ο αριθμός αναφοράς σας ",
 SWAP_time                   : "Υπολειπόμενος χρόνος για την αποστολή ",
-SWAP_elapsed				        : "Time elapsed since sent ",
+SWAP_elapsed                    : "Time elapsed since sent ",
 SWAP_progress_1             : "Η εντολή ξεκίνησε ",
 SWAP_progress_2             : "Εν αναμονή για ", // Waiting for your BTC...
 SWAP_progress_3             : "Ελήφθησαν! ", // ETH Received!
@@ -561,6 +561,10 @@ x_DigitalBitbox             : 'Digital Bitbox ',
 ADD_DigitalBitbox_0a        : 'Re-open MyEtherWallet on a secure (SSL) connection ',
 ADD_DigitalBitbox_0b        : 'Re-open MyEtherWallet using [Chrome](https://www.google.com/chrome/browser/desktop/) or [Opera](https://www.opera.com/) ',
 ADD_DigitalBitbox_scan      : 'Connect your Digital Bitbox ',
+x_Secalot                   : 'Secalot ',
+ADD_Secalot_0a              : 'Re-open MyEtherWallet on a secure (SSL) connection ',
+ADD_Secalot_0b              : 'Re-open MyEtherWallet using [Chrome](https://www.google.com/chrome/browser/desktop/) or [Opera](https://www.opera.com/) ',
+ADD_Secalot_scan            : 'Connect your Secalot ',
 
 /* Error Messages */
 ERROR_0                     : 'Παρακαλούμε εισαγάγετε έγκυρο ποσό. ',
@@ -591,7 +595,7 @@ ERROR_24                    : 'Παρακαλούμε εισαγάγετε έγ�
 ERROR_25                    : 'Παρακαλούμε εισαγάγετε έγκυρο αναγνωριστικό αλυσίδας. ', // 25
 ERROR_26                    : 'Παρακαλούμε εισαγάγετε έγκυρο ABI. ', // 26
 ERROR_27                    : 'Ελάχιστο ποσό: 0.01. Μέγιστο ποσό: ', // 27
-ERROR_28                    : 'Προκειμένου να έχετε πρόσβαση σε αυτό το πορτοφόλι στο μέλλον **είναι απαραίτητο το αρχείο Keystore/JSON & το συνθηματικό ή το ιδιωτικό κλειδί σας**. Παρακαλούμε κρατήστε ένα εξωτερικό αντίγραφο ασφαλείας! Δεν υπάρχει τρόπος ανάκτησης ενός πορτοφολιού άν δεν το αποθηκεύσετε. Διαβάστε τη σελίδα [βοήθειας](https://wallet.akroma.io/#help) για οδηγίες. ',
+ERROR_28                    : 'Προκειμένου να έχετε πρόσβαση σε αυτό το πορτοφόλι στο μέλλον **είναι απαραίτητο το αρχείο Keystore/JSON & το συνθηματικό ή το ιδιωτικό κλειδί σας**. Παρακαλούμε κρατήστε ένα εξωτερικό αντίγραφο ασφαλείας! Δεν υπάρχει τρόπος ανάκτησης ενός πορτοφολιού άν δεν το αποθηκεύσετε. Διαβάστε τη σελίδα [βοήθειας](https://www.myetherwallet.com/#help) για οδηγίες. ',
 ERROR_29                    : 'Παρακαλούμε εισαγάγετε έγκυρο χρήστη και συνθηματικό ',
 ERROR_30                    : 'Παρακαλούμε εισαγάγετε έγκυρο όνομα (7+ χαρακτήρες, περιορισμένα σημεία στίξης) ', // 30
 ERROR_31                    : 'Παρακαλούμε εισαγάγετε έγκυρη μυστική φράση. ', // 31
@@ -635,13 +639,13 @@ WARN_Send_Link              : 'Έχετε φθάσει εδώ μέσω ενός 
 /* Tranlsation Info */
 translate_version           : '0.3 ',
 Translator_Desc             : 'Ευχαριστούμε τους μεταφραστές μας ',
-TranslatorName_1            : '[VitalikFanBoy#117](https://wallet.akroma.io/?gaslimit=21000&to=0x245f27796a44d7e3d30654ed62850ff09ee85656&value=1.0#send-transaction) · ',
+TranslatorName_1            : '[VitalikFanBoy#117](https://www.myetherwallet.com/?gaslimit=21000&to=0x245f27796a44d7e3d30654ed62850ff09ee85656&value=1.0#send-transaction) · ',
 TranslatorAddr_1            : '0x245f27796a44d7e3d30654ed62850ff09ee85656 ',
 /* Translator 1             : Insert Comments Here */
 TranslatorName_2            : 'LefterisJP  · ',
 TranslatorAddr_2            : '',
 /* Translator 2             : Insert Comments Here */
-TranslatorName_3            : '[Nikos Vavoulas](https://wallet.akroma.io/?gaslimit=21000&to=0x062711C89Bd46E9765CfF0b743Cb83a9dBA2d2d2&value=1.0#send-transaction) · ',
+TranslatorName_3            : '[Nikos Vavoulas](https://www.myetherwallet.com/?gaslimit=21000&to=0x062711C89Bd46E9765CfF0b743Cb83a9dBA2d2d2&value=1.0#send-transaction) · ',
 TranslatorAddr_3            : '0x062711C89Bd46E9765CfF0b743Cb83a9dBA2d2d2 ',
 /* Translator 3             : Insert Comments Here */
 TranslatorName_4            : 'Ιωάννης Πρωτονοτάριος',
@@ -675,7 +679,7 @@ HELP_1_Desc_5               : 'Το πορτοφόλι σας δημιουργή
 
 HELP_2a_Desc_1              : 'Θα πρέπει πάντα να δημιουργείτε εξωτερικά αντίγραφα ασφαλείας του πορτοφολιού σας και σε πολλαπλές φυσικές τοποθεσίες - όπως σε μια μονάδα USB ή/και σε ένα κομμάτι χαρτί. ',
 HELP_2a_Desc_2              : 'Αποθηκεύστε τη διεύθυνση. Μπορείτε να την κρατήσετε για τον εαυτό σας ή να τη μοιραστείτε με άλλους. Με αυτόν τον τρόπο, οι άλλοι μπορούν να μεταφέρουν αιθέρα σε εσάς. ',
-HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Akroma to send it! There are 3 types of private keys: ',
+HELP_2a_Desc_3              : 'Save versions of the private key. Do not share it with anyone else. Your private key is necessary when you want to access your Ether to send it! There are 3 types of private keys: ',
 HELP_2a_Desc_4              : 'Τοποθετήστε τη διεύθυνση, αντίγραφα του ιδιωτικού κλειδιού και το αρχείο PDF του χάρτινου πορτοφολιού σας σε ένα φάκελο. Αποθηκεύστε τον στον υπολογιστή σας και μια μονάδα USB. ',
 HELP_2a_Desc_5              : 'Εκτυπώστε το πορτοφόλι εάν έχετε εκτυπωτή. Διαφορετικά, σημειώστε το ιδιωτικό σας κλειδί και τη διεύθυνση σε ένα κομμάτι χαρτί. Αποθηκεύστε το σε ασφαλή τοποθεσία, σε ξεχωριστό μέρος από τον υπολογιστή και τη μονάδα USB. ',
 HELP_2a_Desc_6              : 'Λάβετε υπόψιν σας ότι στόχος είναι να αποτρέψετε την απώλεια των κλειδιών και του συνθηματικού από απώλεια ή βλάβη του σκληρού σας δίσκου, ή της μονάδας USB, ή του χαρτιού. Πρέπει επίσης να έχετε κατά νου τη φυσική απώλεια / καταστροφή μιας ολόκληρης περιοχής (σκεφτείτε πυρκαγιά ή πλημμύρα). ',
@@ -714,7 +718,7 @@ HELP_4_Desc_11              : 'Click the blue "Send Transaction" button below th
 HELP_4_Desc_12              : 'A pop-up will appear. Verify that the amount and the address you are sending to are correct. Then click "Yes, I am sure! Make transaction." button. ',
 HELP_4_Desc_13              : 'The transaction will be submitted. The TX Hash will display. You can click that TX Hash to see it on the blockchain. ',
 
-HELP_4CX_Title              : '4) How do I send Akroma using MyEtherWallet CX? ',
+HELP_4CX_Title              : '4) How do I send Ether using MyEtherWallet CX? ',
 HELP_4CX_Desc_1             : 'Πρώτα, πρέπει να προσθέσετε ένα πορτοφόλι. Άπαξ και το κάνετε αυτό έχετε δύο επιλογές: τη λειτουργία «QuickSend» από το εικονίδιο της επέκτασης στο Chrome ή από τη σελίδα «Αποστολή αιθέρα και μαρκών». ',
 HELP_4CX_Desc_2             : 'QuickSend: ',
 HELP_4CX_Desc_3             : 'Click the Chrome Extension Icon. ',
@@ -769,7 +773,7 @@ HELP_8_Desc_4               : 'Επιπρόσθετα, η πιθανότητα �
 
 HELP_8CX_Title              : '8) What happens if MyEtherWallet CX disappears? ',
 HELP_8CX_Desc_1             : 'First, all data is saved on your computer, not our servers. I know it can be confusing, but when you look at the Chrome Extension, you are NOT looking at stuff saved on our servers somewhere - it\'s all saved on your own computer. ',
-HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Akroma. See the #2a for how to back up your wallets. ',
+HELP_8CX_Desc_2             : 'That said, it is **very important** that you back up all your information for any new wallets generated with MyEtherWallet CX. That way if anything happens to MyEtherWallet CX or your computer, you still have all the information necessary to access your Ether. See the #2a for how to back up your wallets. ',
 HELP_8CX_Desc_3             : 'If for some reason MyEtherWallet CX disappears from the Chrome Store, you can find the source on Github and load it manually. See #5 above. ',
 
 HELP_9_Title                : '9) Is the «Αποστολή αιθέρα και μαρκών» page offline? ',
@@ -820,7 +824,7 @@ HELP_12_Desc_27             : 'After successful import, delete `nothing_special_
 HELP_12_Desc_28             : 'The next time you open the Ethereum Wallet application, your account will be listed under "Accounts". ',
 
 HELP_13_Title               : '13) What does "Insufficient funds. Account you try to send transaction from does not have enough funds. Required XXXXXXXXXXXXXXXXXXX and got: XXXXXXXXXXXXXXXX." Mean? ',
-HELP_13_Desc_1              : 'This means you do not have enough Akroma in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Akroma. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Akroma you were trying to send (if you were attempting to send Akroma). This will give you the amount of Akroma you need to send to that account to make the transaction. ',
+HELP_13_Desc_1              : 'This means you do not have enough Ether in your account to cover the cost of gas. Each transaction (including token and contract transactions) require gas and that gas is paid in Ether. The number displayed is the amount required to cover the cost of the transaction in Wei. Take that number, divide by `1000000000000000000`, and subtract the amount of Ether you were trying to send (if you were attempting to send Ether). This will give you the amount of Ether you need to send to that account to make the transaction. ',
 
 HELP_14_Title               : '14) Ορισμένοι ιστότοποι τυχαιοποιούν την παραγωγή του ιδιωτικού κλειδιού μέσω κινήσεων του ποντικιού. Το MyEtherWallet.com δεν το κάνει αυτό. Είναι ασφαλής η παραγωγή τυχαίων αριθμών για το MyEtherWallet; ',
 HELP_14_Desc_1              : 'Ενώ αυτό το πράγμα με τις κινήσεις του ποντικιού είναι έξυπνο και καταλαβαίνουμε γιατί αρέσει στους περισσότερους ανθρώπους, η πραγματικότητα όμως είναι ότι το window.crypto εξασφαλίζει περισσότερη εντροπία από τις κινήσεις του ποντικιού σας. Δεν είναι ότι οι κινήσεις του ποντικιού δεν είναι ασφαλείς, είναι ότι εμείς (και οι τόνοι πειραμάτων κρυπτογράφησης) πιστεύουμε στο window.crypto. Επιπλέον, το MyEtherWallet.com μπορεί να χρησιμοποιηθεί σε συσκευές αφής. Εδώ είναι μια [συζήτηση μεταξύ ενός θυμωμένου redditor και του Vitalik Buterin σχετικά με τις κινήσεις του ποντικιού έναντι του window.crypto](https://www.reddit.com/r/ethereum/comments/2bilqg/note_there_is_a_paranoid_highsecurity_way_to/cj5sgrm) και εδώ είναι οι [προδιαγραφές w3 του window.crypto](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto). ',
@@ -829,7 +833,7 @@ HELP_15_Title               : '15) Γιατί δεν έχει εμφανιστε
 HELP_15_Desc_1              : 'Ένας λογαριασμός εμφανίζεται σε έναν εξερευνητή blockchain μόνο όταν ο λογαριασμός έχει δραστηριότητα&mdash;για παράδειγμα, αφού μεταφέρετε κάποιο ποσό Αιθέρα σε αυτόν. ',
 
 HELP_16_Title               : '16) Πώς ελέγχω το υπόλοιπο του λογαριασμού μου; ',
-HELP_16_Desc_1              : 'Μπορείτε να χρησιμοποιήσετε έναν εξερευνητή blockchain όπως το [etherscan.io](https://etherscan.io/). Επικολλήστε τη διεύθυνσή σας στη γραμμή αναζήτησης και θα ανασύρει τη διεύθυνση και το ιστορικό συναλλαγών σας. Για παράδειγμα, δείτε πώς φαίνεται ο [λογαριασμός μας για δωρέες](https://etherscan.io/address/0x7cb57b5a97eabe94205c07890be4c1ad31e486a8) στο etherscan.io ',
+HELP_16_Desc_1              : 'Μπορείτε να χρησιμοποιήσετε έναν εξερευνητή blockchain όπως το [etherscan.io](https://etherscan.io/). Επικολλήστε τη διεύθυνσή σας στη γραμμή αναζήτησης και θα ανασύρει τη διεύθυνση και το ιστορικό συναλλαγών σας. Για παράδειγμα, δείτε πώς φαίνεται ο [λογαριασμός μας για δωρέες](https://etherscan.io/address/0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D) στο etherscan.io ',
 
 HELP_17_Title               : '17) Γιατί δεν εμφανίζεται το υπόλοιπό μου όταν ξεκλειδώνω το πορτοφόλι μου; ',
 HELP_17_Desc_1              : 'Αυτό πιθανότατα οφείλεται στο γεγονός ότι βρίσκεστε πίσω από κάποιο τείχος προστασίας. Το API που χρησιμοποιούμε για να πάρουμε το υπόλοιπο και να μετατρέψουμε το εν λόγω υπόλοιπο συχνά εμποδίζεται από τείχη προστασίας για διάφορους λόγους. Θα εξακολουθείτε να είστε σε θέση να αποστείλετε συναλλαγές, απλά πρέπει να χρησιμοποιήσετε μια διαφορετική μέθοδο για να δείτε το εν λόγω υπόλοιπο, όπως το etherscan.io ',
@@ -864,7 +868,7 @@ HELP_Sec_Title              : 'Ασφάλεια ',
 HELP_Sec_Desc_1             : 'If one of your first questions is "Why should I trust these people?", that is a good thing. Hopefully the following will help ease your fears. ',
 HELP_Sec_Desc_2             : 'We\'ve been up and running since August 2015. If you search for ["myetherwallet" on reddit](https://www.reddit.com/search?q=myetherwallet), you can see numerous people who use us with great success. ',
 HELP_Sec_Desc_3             : 'We aren\'t going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere. ',
-HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://wallet.akroma.io](https://wallet.akroma.io). ',
+HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
 HELP_Sec_Desc_5             : 'For generating wallets, you can download the [source code and run it locally](https://github.com/kvhnuke/etherwallet/releases/latest). See #5 above. ',
 HELP_Sec_Desc_6             : 'Generate a test wallet and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred. ',
 HELP_Sec_Desc_8             : 'If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! ',

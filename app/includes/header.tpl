@@ -3,70 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>wallet.akroma.io</title>
-
-<meta property="og:title" content="wallet.akroma.io - Akroma Web Wallet">
-<meta property="og:site_name" content="wallet.akroma.io - Akroma Web Wallet">
-<meta name="twitter:title" content="wallet.akroma.io - Akroma Web Wallet">
-<meta name="apple-mobile-web-app-title" content="wallet.akroma.io - Akroma Web Wallet">
-<link href="https://wallet.akroma.io" rel="canonical">
-<meta content="https://wallet.akroma.io" property="og:url">
-<meta content="https://wallet.akroma.io" name="twitter:url">
+<title>MyEtherWallet.com</title>
+<meta property="og:title" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
+<meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
+<link href="https://www.myetherwallet.com" rel="canonical">
+<meta content="https://www.myetherwallet.com" property="og:url">
+<meta content="https://www.myetherwallet.com" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
-<meta name="description" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
-<meta property="og:description"  content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
-<meta name="twitter:description" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
+<meta name="description" content="MyEtherWallet (MEW) is a free, open-source, client-side interface for generating Ethereum wallets & more. Interact with the Ethereum blockchain easily & securely.">
+<meta property="og:description"  content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
+<meta name="twitter:description" content="Free, open-source, client-side Ethereum wallet. Enabling you to interact with the blockchain easily & securely.">
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
-
-
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/images/favicon/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
-<link rel="manifest" href="/images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/images/favicon/ms-tile-70x70.png">
-<meta name="msapplication-TileImage" content="/images/favicon/ms-tile-144x144.png">
-<meta name="msapplication-TileImage" content="/images/favicon/ms-tile-150x150.png">
-<meta name="msapplication-TileImage" content="/images/favicon/ms-tile-310x150.png">
-<meta name="msapplication-TileImage" content="/images/favicon/ms-tile-310x310.png">
-<link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-
-
-<!-- <meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" /> -->
-<meta name="apple-mobile-web-app-title" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.">
-<meta name="application-name" content="Akroma Web Wallet">
+<meta name="google-site-verification" content="IpChQ00NYUQuNs_7Xs6xlnSdzalOlTUYbBsr8f7OpvM" />
+<link href="images/fav/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+<link href="images/fav/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32">
+<link href="images/fav/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16">
+<link href="images/fav/manifest.json" rel="manifest">
+<link href="images/fav/safari-pinned-tab.svg" rel="mask-icon" color="#2f99b0">
+<link href="images/fav/favicon.ico" rel="shortcut icon">
+<meta name="apple-mobile-web-app-title" content="MyEtherWallet &middot; Your Key to Ethereum">
+<meta name="application-name" content="MyEtherWallet">
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
-<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-
-<meta property="og:url" content="https://wallet.akroma.io" />
-<meta property="og:title" content="Akroma Web Wallet. Interact with the Akroma blockchain easily & securely." />
+<meta name="theme-color" content="#1d6986">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
+<meta property="og:url" content="https://www.myetherwallet.com" />
+<meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
 <meta property="og:type" content="website">
-<meta property="og:image" content="/images/Akroma.jpg" />
-<meta name="twitter:image" content="/images/Akroma.jpg">
+<meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
+<meta property="og:image" content="/images/myetherwallet-logo.png" />
+<meta property="og:image" content="/images/myetherwallet-logo-square.png" />
+<meta property="og:image" content="/images/myetherwallet-banner-fun.jpg" />
+<meta name="twitter:image" content="/images/myetherwallet-logo-twitter.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@akroma_io">
-<meta name="twitter:creator" content="@akroma_io">
+<meta name="twitter:site" content="@MyEtherWallet">
+<meta name="twitter:creator" content="@MyEtherWallet">
 <script type="application/ld+json">
 {
 "@context": "http://schema.org",
 "@type" : "Organization",
-"name" : "Akroma Web Wallet",
-"legalName" : "",
-"url" : "https://wallet.akroma.io/"],
-"logo" : "https://wallet.akroma.io/images/Akroma.jpg",
-"description": "Akroma Web Wallet. Interact with the Akroma blockchain easily & securely.",
+"name" : "MyEtherWallet",
+"legalName" : "MyEtherWallet Inc",
+"url" : "https://www.myetherwallet.com/",
+"contactPoint" : [{
+  "@type" : "ContactPoint",
+  "email" : "support@myetherwallet.com",
+  "url"   : "https://myetherwallet.com",
+  "contactType" : "customer service"
+}],
+"logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
+"description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
 "sameAs" : [
-  "https://wallet.akroma.io/",
-  "https://twitter.com/akroma_io",
-  "https://medium.com/akroma",
-  "https://github.com/akroma-project/akroma-wallet-web",
-  "https://github.com/akroma-project"
+  "https://www.myetherwallet.com/",
+  "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
+  "https://www.facebook.com/MyEtherWallet/",
+  "https://twitter.com/myetherwallet",
+  "https://medium.com/@myetherwallet",
+  "https://myetherwallet.github.io/knowledge-base/",
+  "https://github.com/kvhnuke/etherwallet",
+  "https://github.com/MyEtherWallet",
+  "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
 ]
 }
 </script>
@@ -78,25 +78,41 @@
 @@if (site === 'mew' ) {
   <div class="small announcement annoucement-danger">
     <div class="container">
-      DON'T GET PHISHED, BOOKMARK <a href="https://wallet.akroma.io"> https://wallet.akroma.io</a>
+      DON'T GET PHISHED, please! 🎣 Thank you! 🤗
+      <br />
+      1. BOOKMARK <a href="https://www.myetherwallet.com"> MYETHERWALLET.COM </a>
+      <span class="hidden-xs">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        2. INSTALL <a href="https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn" target="_blank" rel="noopener noreferrer">EAL</a>
+        or
+        <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html" target="_blank" rel="noopener noreferrer">MetaMask</a>
+        or
+        <a href="https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige" target="_blank" rel="noopener noreferrer">Cryptonite</a>
+      </span>
     </div>
   </div>
 }
 
 <section class="bg-gradient header-branding">
   <section class="container">
+    @@if (site === 'mew' ) {
       <a class="brand" href="/" aria-label="Go to homepage">
-        <img src="images/logo-akroma-web-wallet.svg"   height="64px" width="245px" alt="Akroma Web Wallet" />
-        <!-- <h1>Akroma Web Wallet</h1> -->
-        <p class="small visible-xs">0.0.1</p>
+        <img src="images/logo-myetherwallet.svg"   height="64px" width="245px" alt="MyEtherWallet" />
+        <p class="small visible-xs">3.21.17</p>
       </a>
-   
+    }
+    @@if (site === 'cx'  ) {
+      <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
+        <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="MyEtherWallet" />
+        <p class="small visible-xs">3.21.17</p>
+      </a>
+    }
     <div class="tagline">
 
-    <span class="hidden-xs">0.0.1</span>
+    <span class="hidden-xs">3.21.17</span>
 
     <span class="dropdown dropdown-lang" ng-cloak>
-      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle  btn btn-white" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
+      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
       <ul class="dropdown-menu" ng-show="dropdown">
         <li><a ng-class="{true:'active'}[curLang=='Català']"          ng-click="changeLanguage('ca','Català'         )"> Català          </a></li>
         <li><a ng-class="{true:'active'}[curLang=='Deutsch']"         ng-click="changeLanguage('de','Deutsch'        )"> Deutsch         </a></li>
@@ -188,21 +204,21 @@
 
     </div>
   </section>
+  <p class="dropdown-gas__msg"
+     ng-show="gasPriceMsg"
+     ng-hide="ajaxReq.type!='ETH'">
+    The network is really full right now. Check
+    <a href="https://ethgasstation.info/"
+       target="_blank" rel="noopener noreferrer">Eth Gas Station</a>
+    for gas price to use.
+  </p>
 </section>
 
-<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing" >
+<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing">
   <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
   <div class="nav-scroll">
     <ul class="nav-inner">
-      <li class="nav-item help">
-        <a href="https://www.akroma.io" target="_blank" rel="noopener noreferrer">
-          <span>
-            <strong>
-            Visit Akroma.io
-          </strong>
-          </span>
-        </a>
-      </li>
+      @@if (site === 'mew' ) {
       <li ng-repeat="tab in tabNames track by $index" \
           class="nav-item {{tab.name}}" \
           ng-class="{active: $index==gService.currentTab}"
@@ -210,8 +226,18 @@
           ng-click="tabClick($index)">
             <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
       </li>
+      }
+      @@if (site === 'cx' ) {
+      <li ng-repeat="tab in tabNames track by $index" \
+          class="nav-item {{tab.name}}" \
+          ng-class="{active: $index==gService.currentTab}"
+          ng-show="tab.cx"
+          ng-click="tabClick($index)">
+            <a tabindex="0" aria-label="nav item: {{tab.name | translate}}" translate="{{tab.name}}"></a>
+      </li>
+      }
       <li class="nav-item help">
-        <a href="https://github.com/akroma-project/akroma-wallet-web" target="_blank" rel="noopener noreferrer">
+        <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>
@@ -227,6 +253,7 @@
      ng-mouseleave="scrollHoverOut()">&#187;</a>
 </nav>
 
-@@include( './header-node-modal.tpl', { "site": "mew" } )
+@@if (site === 'mew' ) { @@include( './header-node-modal.tpl', { "site": "mew" } ) }
+@@if (site === 'cx'  ) { @@include( './header-node-modal.tpl', { "site": "cx"  } ) }
 
 </header>

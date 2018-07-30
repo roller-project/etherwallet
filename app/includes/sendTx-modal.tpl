@@ -61,7 +61,7 @@
 
         <br />
 
-        <table class="table small table-condensed table-hover">
+        <table class="table small table-condensed table-hover transaction-modal">
           <tbody>
             <tr>
               <td class="small text-right">To Address:</td>
@@ -76,7 +76,7 @@
             </tr>
             <tr>
               <td class="small text-right">Amount to Send:</td>
-              <td class="small text-left mono">{{parsedSignedTx.value}} AKA</td>
+              <td class="small text-left mono">{{parsedSignedTx.value}} ETH</td>
             </tr>
             <tr>
               <td class="small text-right">Account Balance:</td>
@@ -96,12 +96,12 @@
             </tr>
             <tr>
               <td class="small text-right">Gas Price:</td>
-              <td class="small text-left mono">{{parsedSignedTx.gasPrice.gwei}} GWEI <small>({{parsedSignedTx.gasPrice.eth}} AKA)</small>
+              <td class="small text-left mono">{{parsedSignedTx.gasPrice.gwei}} GWEI <small>({{parsedSignedTx.gasPrice.eth}} ETH)</small>
               </td>
             </tr>
             <tr>
               <td class="small text-right">Max TX Fee:</td>
-              <td class="small text-left mono"> {{parsedSignedTx.txFee.eth}} AKA <small>({{parsedSignedTx.txFee.gwei}} GWEI)</small></td>
+              <td class="small text-left mono"> {{parsedSignedTx.txFee.eth}} ETH <small>({{parsedSignedTx.txFee.gwei}} GWEI)</small></td>
             </tr>
             <tr>
               <td class="small text-right">Nonce:</td>
@@ -109,7 +109,7 @@
             </tr>
             <tr>
               <td class="small text-right">Data:</td>
-              <td class="small text-left mono">{{parsedSignedTx.data}}</td>
+              <td class="small text-left mono text-width-limit"><p>{{parsedSignedTx.data}}</p></td>
             </tr>
 
           </tbody>

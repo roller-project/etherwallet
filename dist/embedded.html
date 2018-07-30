@@ -2,9 +2,9 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>Akroma Web Wallet</title>
-  <link rel="canonical" href="https://wallet.akroma.io" />
-  <meta name="description" content="Akroma Web Wallet is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( wallet.akroma.io ) before unlocking your wallet.">
+  <title>MyEtherWallet.com</title>
+  <link rel="canonical" href="https://www.myetherwallet.com" />
+  <meta name="description" content="MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( myetherwallet.com ) before unlocking your wallet.">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/etherwallet-master.min.css">
@@ -32,7 +32,7 @@
 
 <header class="bg-gradient text-white">
 <section class="container text-center">
-  <a href="https://wallet.akroma.io/"><img src="images/logo-myetherwallet.svg" height="50px" width="auto" alt="Akroma Wallet" class="embedded-logo" /></a>
+  <a href="https://www.myetherwallet.com/"><img src="images/logo-myetherwallet.svg" height="50px" width="auto" alt="Ether Wallet" class="embedded-logo" /></a>
 </section>
 </header>
 
@@ -50,7 +50,6 @@
       ng-cloak>
 
   <article class="block__wrap gen__1" ng-show="!wallet && !showGetAddress">
-
     <section class="block__main gen__1--inner">
       <br />
       <h1 translate="NAV_GenerateWallet" aria-live="polite">
@@ -66,7 +65,8 @@
              placeholder="{{'GEN_Placeholder_1' | translate }}"
              ng-model="password"
              ng-class="isStrongPass() ? 'is-valid' : 'is-invalid'"
-             aria-label="{{'GEN_Label_1' | translate}}"/>
+             aria-label="{{'GEN_Label_1' | translate}}"
+             />
         <span tabindex="0"
               aria-label="make password visible"
               role="button"
@@ -81,20 +81,53 @@
          translate="NAV_GenerateWallet">
            Generate Wallet
       </a>
+      <article class="modal fade" id="appleMobileModal" tabindex="-1">
+  <section class="modal-dialog">
+    <section class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" ng-click="closeModal()" aria-label="Close Dialog">&times;</button>
+        <h2 class="modal-title" translate="APPLE_Mob_Notice_Head">
+          It seems like you're using an IPhone or an IPad.
+        </h2>
+
+        <p translate="APPLE_Mob_Notice_Body_1">
+          Just letting you know that generating wallets isn't supported in these devices because of Apple's storage restrictions.
+        </p>
+        <p translate="APPLE_Mob_Notice_Body_2">
+          Please use the website on a laptop or computer.
+        </p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-primary col-xs-12" ng-click="closeModal()" translate="APPLE_Mob_Notice_Understand">
+          I understand.
+        </button>
+      </div>
+    </section>
+  </section>
+</article>
+
       <p translate="x_PasswordDesc"></p>
       <div class="text-center">
         <strong>
-          <a href="https://github.com/akroma-project/akroma-wallet-web/wiki/How-to-Create-a-Wallet"
+          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/creating-a-new-wallet-on-myetherwallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="GEN_Help_5">
                How to Create a Wallet
           </a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/getting-started-new.html"
+             target="_blank"
+             rel="noopener noreferrer"
+             translate="GEN_Help_6">
+               Getting Started
+          </a>
         </strong>
       </div>
       <br>
     </section>
-<!-- 
+
     <section class="block__help">
 
       <h2 translate="GEN_Help_0">
@@ -105,7 +138,7 @@
         <li>
           <p>
             <strong>
-              Ledger / TREZOR / Digital Bitbox
+              Ledger / TREZOR / Digital Bitbox / Secalot
             </strong>:
             <span translate="GEN_Help_1">
               Use your
@@ -175,7 +208,7 @@
         </li>
       </ul>
 
-    </section> -->
+    </section>
 
   </article>
 
@@ -195,7 +228,7 @@
          aria-label="{{'x_Download'|translate}} {{'x_Keystore'|translate}}"
          aria-describedby="x_KeystoreDesc"
          ng-click="downloaded()"
-         target="_blank" rel="noopener noreferrer">
+         rel="noopener noreferrer">
         <span translate="x_Download">
           DOWNLOAD
         </span>
@@ -513,7 +546,6 @@
     </div>
 
   </article>
-
 </main>
 
 
@@ -538,8 +570,8 @@
 
 <footer>
 
-<script type='application/ld+json'>{"@context":"http://schema.org","@type":"Organization","@id":"#organization","url":"https://wallet.akroma.io/","name":"MyEtherWallet",
-"logo":"https://myetherwallet.com/images/myetherwallet-logo-banner.png","description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( myetherwallet.com ) before unlocking your wallet.","sameAs":["https://wallet.akroma.io/","https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm","https://www.facebook.com/MyEtherWallet/","https://twitter.com/myetherwallet","https://medium.com/@myetherwallet_96408","https://myetherwallet.github.io/knowledge-base/","https://github.com/kvhnuke/etherwallet","https://github.com/MyEtherWallet","https://kvhnuke.github.io/etherwallet/","https://github.com/kvhnuke/etherwallet/releases/latest","https://github.com/409H/EtherAddressLookup","https://myetherwallet.slack.com/","https://myetherwallet.herokuapp.com/","https://www.reddit.com/r/MyEtherWallet/","https://www.reddit.com/user/insomniasexx/","https://www.reddit.com/user/kvhnuke/","https://www.reddit.com/user/myetherwallet"]}</script>
+<script type='application/ld+json'>{"@context":"http://schema.org","@type":"Organization","@id":"#organization","url":"https://www.myetherwallet.com/","name":"MyEtherWallet",
+"logo":"https://myetherwallet.com/images/myetherwallet-logo-banner.png","description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely. Double-check the URL ( myetherwallet.com ) before unlocking your wallet.","sameAs":["https://www.myetherwallet.com/","https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm","https://www.facebook.com/MyEtherWallet/","https://twitter.com/myetherwallet","https://medium.com/@myetherwallet_96408","https://myetherwallet.github.io/knowledge-base/","https://github.com/kvhnuke/etherwallet","https://github.com/MyEtherWallet","https://kvhnuke.github.io/etherwallet/","https://github.com/kvhnuke/etherwallet/releases/latest","https://github.com/409H/EtherAddressLookup","https://myetherwallet.slack.com/","https://myetherwallet.herokuapp.com/","https://www.reddit.com/r/MyEtherWallet/","https://www.reddit.com/user/insomniasexx/","https://www.reddit.com/user/kvhnuke/","https://www.reddit.com/user/myetherwallet"]}</script>
 
 </body>
 

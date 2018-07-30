@@ -31,7 +31,7 @@ nodes.nodeList = {
         'chainId': 29021982,
         'tokenList': require('./tokens/rolTokens.json'),
         'abiList': require('./abiDefinitions/rolAbi.json'),
-        'service': 'roller Offical',
+        'service': 'Roller Offical',
         'lib': new nodes.customNode('https://node.roller.today', '')
     }
 };

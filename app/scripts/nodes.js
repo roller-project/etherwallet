@@ -29,8 +29,8 @@ nodes.nodeList = {
         'type': nodes.nodeTypes.ROLLER,
         'eip155': true,
         'chainId': 29021982,
-        'tokenList': require('./tokens/akromaTokens.json'),
-        'abiList': require('./abiDefinitions/akromaAbi.json'),
+        'tokenList': require('./tokens/rolTokens.json'),
+        'abiList': require('./abiDefinitions/rolAbi.json'),
         'service': 'Roller Offical',
         'lib': new nodes.customNode('https://node.roller.today', '')
     }

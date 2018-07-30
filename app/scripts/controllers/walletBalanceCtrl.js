@@ -10,7 +10,7 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
         type: "custom",
     };
 
-    $scope.slide = 1;
+    $scope.slide = 2;
 
     $scope.customTokenField = false;
 
@@ -96,5 +96,4 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
     }
 
 };
-
 module.exports = walletBalanceCtrl;

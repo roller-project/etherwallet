@@ -1,8 +1,8 @@
 {
-    "name": "MyEtherWallet",
-    "version": "3.21.17",
+    "name": "Roller Platform",
+    "version": "3.11.2",
     "description": "An NPM dist of MyEtherWallet. For easier downloading & updating via CLI.",
-    "author": "MyEtherWallet",
+    "author": "Roller Platform",
     "license": "ISC",
     "devDependencies": {
         "open": "0.0.5"

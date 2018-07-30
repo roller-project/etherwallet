@@ -189,7 +189,7 @@
         </h4>
 
         <p class="text-danger" translate="ADD_Warning_1">
-          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer Ether from it.
+          You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer roller from it.
         </p>
 
         <div class="form-group">
@@ -209,7 +209,7 @@
           </label>
           <input class="form-control"
                  type="text"
-                 placeholder="0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D"
+                 placeholder="0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8"
                  ng-model="addAccount.address"
                  ng-change="watchOnlyChange()"
                  ng-keyup="$event.keyCode == 13 && addWatchOnly()"/>
@@ -351,10 +351,10 @@
       </h5>
       <ul class="account-info">
         <li>
-          <a href="https://etherscan.io/address/{{wallet.getAddressString()}}"
+          <a href="https://roller.io/explorer/address/{{wallet.getAddressString()}}"
              target="_blank"
              rel="noopener noreferrer">
-               https://etherscan.io/address/ {{wallet.getAddressString()}}
+               https://roller.io/explorer/address/{{wallet.getAddressString()}}
           </a>
         </li>
       </ul>

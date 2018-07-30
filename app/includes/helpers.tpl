@@ -1,11 +1,11 @@
 <div class="" ng-controller="helpersCtrl">
 
   <h1>
-    Convert Ethererum Units (e.g. Ether <-> Wei)
+    Convert roller Units (e.g. roller <-> Wei)
   </h1>
 
   <h2 class="p">
-    Ether Wei Converter
+    roller Wei Converter
   </h2>
 
   <section class="mono">
@@ -213,28 +213,6 @@
   <section class="row">
     <div class="form-group col-xs-12">
       <label>
-        Start Auction And Bid Data
-      </label>
-      <input class="form-control" type="text" ng-model="startAndBidAuctionData" readonly />
-      <p>
-        To:
-        <code>0x6090a6e47849629b7245dfa1ca21d94cd15878ef</code>
-        &nbsp;&middot;&nbsp;
-        Amount:
-        <code>0</code>
-        &nbsp;&middot;&nbsp;
-        Gas Limit:
-        <code>200000</code>
-        &nbsp;&middot;&nbsp;
-        Data:
-        <code>[ABOVE]</code>
-      </p>
-    </div>
-  </section>
-
-  <section class="row">
-    <div class="form-group col-xs-12">
-      <label>
         New Bid Data
         <small>If your reveals aren't working, this is the string that needs to match your bid data on Etherscan)</small>
     </label>
@@ -293,7 +271,7 @@
 
 
   <h1>
-    Convert Decimal to Hexadecimal and Hex to Decimal
+    Convert Decimal to Hexidecimal and Hex to Decimal
   </h1>
   <div class="form-group">
     <label>
@@ -347,7 +325,7 @@
   <br /><br /><br />
 
 
-  <h1> Ether Unit Reference Guide
+  <h1> roller Unit Reference Guide
   </h1>
   <table class="table table-striped mono">
     <tr>

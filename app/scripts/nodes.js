@@ -18,7 +18,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
         'service': 'Roller Wallet',
-        'lib': new nodes.customNode('https://node.roller.today', '')
+        'lib': new nodes.customNode('http://127.0.0.1', '8545')
     }
 };
 

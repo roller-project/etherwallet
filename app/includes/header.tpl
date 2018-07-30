@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>MyPirlWallet</title>
 <meta name="description" content="MyPirlWallet is a free, open-source, client-side interface for generating Pirl wallets &amp; interacting with the blockchain easily &amp; securely. Double-check the URL ( .io ) before unlocking your wallet.">
-<link rel="canonical" href="https://wallet.pirl.io" />
+<link rel="canonical" href="https://mew.roller.today" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
@@ -34,7 +34,7 @@
 
 @@if (site === 'mew' ) {
   <div class="small announcement annoucement-danger">
-    <div class="container">Always check the URL and look for MyPirlWallet SSL Certificate up there. Look for https://wallet.pirl.io/. </div>
+    <div class="container">Always check the URL and look for MyPirlWallet SSL Certificate up there. Look for https://mew.roller.today/. </div>
   </div>
 }
 
@@ -109,7 +109,7 @@
     </span>
 
     <!-- Warning: The separators you see on the frontend are in styles/etherwallet-custom.less. If you add / change a node, you have to adjust these. Ping tayvano if you're not a CSS wizard -->
-<!--
+
     <span class="dropdown dropdown-node" ng-cloak>
       <a tabindex="0" aria-haspopup="true" aria-label="change node. current node {{curNode.name}} node by {{curNode.service}}" class="dropdown-toggle  btn btn-white" ng-click="dropdownNode = !dropdownNode">
         Network: {{curNode.name}} <small>({{curNode.service}})</small>
@@ -124,7 +124,7 @@
         <li><a ng-click="customNodeModal.open(); dropdownNode = !dropdownNode;"> Add Custom Node </a></li>
       </ul>
     </span>
--->
+
     </div>
   </section>
 </section>

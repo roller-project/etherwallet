@@ -1,5 +1,5 @@
 #! /usr/bin/env node
 
 var open = require("open");
-var separator = process.platform=="win32" ? "\\" : "/";
-open(require('path').dirname(require.main.filename)+separator+".."+separator+"index.html");
+var seperator = process.platform=="win32" ? "\\" : "/";
+open(require('path').dirname(require.main.filename)+seperator+".."+seperator+"index.html");

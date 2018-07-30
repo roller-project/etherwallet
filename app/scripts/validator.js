@@ -13,13 +13,6 @@ validator.isChecksumAddress = function(address) {
 validator.isValidENSorEtherAddress = function(address) {
     return (validator.isValidAddress(address) || validator.isValidENSAddress(address));
 }
-validator.isValidSubName = function(str) {
-    try {
-        return (str.length > 0 && ens.normalise(str) != '' && str.substring(0, 2) != '0x');
-    } catch (e) {
-        return false;
-    }
-}
 validator.isValidENSName = function(str) {
     try {
         return (str.length > 6 && ens.normalise(str) != '' && str.substring(0, 2) != '0x');
@@ -32,7 +25,15 @@ validator.isValidTxHash = function(txHash) {
 }
 validator.isValidENSAddress = function(address) {
     address = ens.normalise(address);
-    return address.lastIndexOf(".") != -1;
+    var tld = address.substr(address.lastIndexOf('.') + 1);
+    var _ens = new ens();
+    var validTLDs = {
+        eth: true,
+        test: true,
+        reverse: true
+    }
+    if (validTLDs[tld]) return true;
+    return false;
 }
 validator.isValidBTCAddress = function(address) {
     return ethUtil.WAValidator.validate(address, 'BTC');

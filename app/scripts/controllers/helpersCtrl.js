@@ -67,7 +67,6 @@ var helpersCtrl = function($scope) {
     $scope.allTheThings = function() {
         $scope.getStartAuctionData();
         $scope.getShaBid();
-        $scope.getStartAndBidAuctionData();
         $scope.getRevealBidData();
         $scope.getFinalizeAuctionData();
     }
@@ -83,16 +82,6 @@ var helpersCtrl = function($scope) {
             });
         } else {
             $scope.shaBid = '';
-        }
-    }
-
-    $scope.getStartAndBidAuctionData = function() {
-        if ($scope.ensLabelHash && $scope.ensAddress && $scope.bidWei && $scope.ensSecretHash) {
-          ENS.shaBid($scope.ensLabelHash, $scope.ensAddress.toLowerCase(), $scope.bidWei, $scope.ensSecretHash, function(data) {
-              $scope.startAndBidAuctionData = ENS.getStartAndBidAuctionData($scope.ensLabel, ENS.getNewBidData(data.data))
-          });
-        } else {
-          $scope.startAndBidAuctionData = '';
         }
     }
 

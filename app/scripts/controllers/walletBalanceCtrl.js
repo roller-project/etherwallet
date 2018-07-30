@@ -2,7 +2,6 @@
 var walletBalanceCtrl = function($scope, $sce, $rootScope) {
     $scope.ajaxReq = ajaxReq;
     $scope.tokensLoaded = false;
-    $scope.showAllTokens = false;
     $scope.localToken = {
         contractAdd: "",
         symbol: "",
@@ -10,10 +9,9 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
         type: "custom",
     };
 
-    $scope.slide = 1;
+    $scope.slide = 2;
 
     $scope.customTokenField = false;
-
     $scope.saveTokenToLocal = function() {
         globalFuncs.saveTokenToLocal($scope.localToken, function(data) {
             if (!data.error) {
@@ -31,27 +29,6 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
                 $scope.notifier.danger(data.msg);
             }
         });
-    }
-
-
-    $scope.setAndVerifyBalance = function(token) {
-      if ( token.balance == 'Click to Load' ) {
-        token.balance='loading';
-
-        token.setBalance(function() {
-           var autoTokens = globalFuncs.localStorage.getItem('autoLoadTokens')
-           $scope.autoLoadTokens = autoTokens ? JSON.parse(autoTokens) : [];
-
-           console.log(token.balance)
-           console.log(token.contractAddress)
-
-          if ( parseInt(token.balance) > 0 ) {
-            $scope.autoLoadTokens.push( token.contractAddress );
-            globalFuncs.localStorage.setItem( 'autoLoadTokens', JSON.stringify($scope.autoLoadTokens) );
-            console.log(token)
-          }
-        });
-      }
     }
 
     /*
@@ -96,5 +73,4 @@ var walletBalanceCtrl = function($scope, $sce, $rootScope) {
     }
 
 };
-
 module.exports = walletBalanceCtrl;

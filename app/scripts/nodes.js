@@ -4,7 +4,7 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    roller: "roller",
+    ROLLER: "ROLLER",
     Custom: "CUSTOM"
 };
 nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
@@ -23,16 +23,16 @@ nodes.customNodeObj = {
 };
 nodes.nodeList = {
     'roller_offical': {
-        'name': 'roller',
+        'name': 'ROLLER',
         'blockExplorerTX': 'https://roller.io/explorer/transaction/[[txHash]]',
         'blockExplorerAddr': 'https://roller.io/explorer/address/[[address]]',
-        'type': nodes.nodeTypes.roller,
+        'type': nodes.nodeTypes.ROLLER,
         'eip155': true,
-        'chainId': 200625,
-        'tokenList': require('./tokens/rollerTokens.json'),
-        'abiList': require('./abiDefinitions/rollerAbi.json'),
+        'chainId': 29021982,
+        'tokenList': require('./tokens/rolTokens.json'),
+        'abiList': require('./abiDefinitions/rolAbi.json'),
         'service': 'roller Offical',
-        'lib': new nodes.customNode('https://rpc.roller.io', '')
+        'lib': new nodes.customNode('https://node.roller.today', '')
     }
 };
 

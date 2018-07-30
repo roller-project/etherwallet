@@ -4,11 +4,11 @@ nodes.customNode = require('./nodeHelpers/customNode');
 nodes.infuraNode = require('./nodeHelpers/infura');
 nodes.metamaskNode = require('./nodeHelpers/metamask');
 nodes.nodeTypes = {
-    ROL: "ETH"
+    ROLLER: "ROLLER",
+    Custom: "CUSTOM"
 };
-nodes.ensNodeTypes = [nodes.nodeTypes.ROL, nodes.nodeTypes.Ropsten];
-nodes.ensSubNodeTypes = [nodes.nodeTypes.ROL];
-nodes.domainsaleNodeTypes = [nodes.nodeTypes.ROL, nodes.nodeTypes.Ropsten];
+nodes.ensNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
+nodes.domainsaleNodeTypes = [nodes.nodeTypes.ETH, nodes.nodeTypes.Ropsten];
 nodes.customNodeObj = {
     'name': 'CUS',
     'blockExplorerTX': '',
@@ -22,21 +22,19 @@ nodes.customNodeObj = {
     'lib': null
 };
 nodes.nodeList = {
-    'eth_mew': {
-        'name': 'ROL',
-        'blockExplorerTX': 'https://etherscan.io/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://etherscan.io/address/[[address]]',
-        'type': nodes.nodeTypes.ROL,
+    'roller_offical': {
+        'name': 'ROLLER',
+        'blockExplorerTX': 'http://explorer.roller.today:3000/tx/[[txHash]]',
+        'blockExplorerAddr': 'http://explorer.roller.today:3000/addr/[[address]]',
+        'type': nodes.nodeTypes.ROLLER,
         'eip155': true,
-        'chainId': 29021982,
-        'tokenList': require('./tokens/ethTokens.json'),
-        'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'roller.today',
-        'lib': new nodes.customNode('https://node.roller.today', '8545')
+        'chainId': 200625,
+        'tokenList': require('./tokens/rolTokens.json'),
+        'abiList': require('./abiDefinitions/rolAbi.json'),
+        'service': 'Roller Offical',
+        'lib': new nodes.customNode('https://node.roller.today', '')
     }
-    
 };
-
 
 nodes.ethPrice = require('./nodeHelpers/ethPrice');
 module.exports = nodes;

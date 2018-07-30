@@ -10,7 +10,7 @@ globalFuncs.getBlockie = function(address) {
 };
 globalFuncs.printPaperWallets = function(strJson) {
     var win = window.open("about:blank", "_blank");
-    var data = "<html>\r\n\r\n<head>\r\n <link rel=\"stylesheet\" href=\"css\/etherwallet-master.min.css\" \/>\r\n <script type=\"text\/javascript\" src=\"js\/jquery-1.12.3.min.js\"><\/script>\r\n <script type=\"text\/javascript\" src=\"js\/etherwallet-static.min.js\"><\/script>\r\n <script type=\"text\/javascript\">\r\n function getBlockie(address) {\r\n return blockies.create({\r\n seed: address.toLowerCase(),\r\n size: 8,\r\n scale: 16\r\n }).toDataURL();\r\n    }\r\n    function generateWallets() {\r\n var json = JSON.parse($(\"#printwalletjson\").html());\r\n for (var i = 0; i < json.length; i++) {\r\n var walletTemplate = $(\'<div\/>\').append($(\"#print-container\").clone());\r\n new QRCode($(walletTemplate).find(\"#paperwalletaddqr\")[0], {\r\n text: json[i][\'address\'],\r\n colorDark: \"#000000\",\r\n colorLight: \"#ffffff\",\r\n correctLevel: QRCode.CorrectLevel.H\r\n });\r\n new QRCode($(walletTemplate).find(\"#paperwalletprivqr\")[0], {\r\n text: json[i][\'private\'],\r\n colorDark: \"#000000\",\r\n colorLight: \"#ffffff\",\r\n correctLevel: QRCode.CorrectLevel.H\r\n });\r\n $(walletTemplate).find(\"#paperwalletadd\").html(json[i][\'address\']);\r\n $(walletTemplate).find(\"#paperwalletpriv\").html(json[i][\'private\']);\r\n $(walletTemplate).find(\"#identicon\").css(\'background-image\',\'url(\' + getBlockie(json[i][\'address\']) +\')\');\r\n walletTemplate = $(walletTemplate).find(\"#print-container\").show();\r\n $(\"body\").append(walletTemplate);\r\n }\r\n setTimeout(function() {\r\n window.print();\r\n }, 2000);\r\n    }\r\n    <\/script>\r\n<\/head>\r\n\r\n<body><span id=\"printwalletjson\" style=\"display: none;\">{{WALLETJSON}}<\/span>\r\n    <div class=\"print-container\" style=\"display: none; margin-bottom: 50px;\" id=\"print-container\"><img src=\"images\/logo-ethereum-1.png\" class=\"ether-logo-1\" height=\"100%\" width=\"auto\" \/> <div id=\"identicon\" class=\"addressIdenticon med float\"><\/div>\r\n <img src=\"images\/print-sidebar.png\" height=\"100%\" width=\"auto\" class=\"print-title\" \/>\r\n <div class=\"print-qr-code-1\">\r\n <div id=\"paperwalletaddqr\"><\/div>\r\n <p class=\"print-text\" style=\"padding-top: 25px;\">YOUR ADDRESS<\/p>\r\n <\/div>\r\n <div class=\"print-notes\"><img src=\"images\/notes-bg.png\" width=\"90%;\" height=\"auto\" class=\"pull-left\" \/>\r\n <p class=\"print-text\">AMOUNT \/ NOTES<\/p>\r\n <\/div>\r\n <div class=\"print-qr-code-2\">\r\n <div id=\"paperwalletprivqr\"><\/div>\r\n <p class=\"print-text\" style=\"padding-top: 30px;\">YOUR PRIVATE KEY<\/p>\r\n <\/div>\r\n <div class=\"print-address-container\">\r\n <p><strong>Your Address:<\/strong>\r\n <br \/><span id=\"paperwalletadd\"><\/span><\/p>\r\n <p><strong>Your Private Key:<\/strong>\r\n <br \/><span id=\"paperwalletpriv\"><\/span><\/p>\r\n <\/div>\r\n    <\/div>\r\n<\/body>\r\n\r\n<\/html>\r\n";
+    var data = "<html>\r\n\r\n<head>\r\n <link rel=\"stylesheet\" href=\"css\/etherwallet-master.min.css\" \/>\r\n <script type=\"text\/javascript\" src=\"js\/jquery-1.12.3.min.js\"><\/script>\r\n <script type=\"text\/javascript\" src=\"js\/etherwallet-static.min.js\"><\/script>\r\n <script type=\"text\/javascript\">\r\n function getBlockie(address) {\r\n return blockies.create({\r\n seed: address.toLowerCase(),\r\n size: 8,\r\n scale: 16\r\n }).toDataURL();\r\n    }\r\n    function generateWallets() {\r\n var json = JSON.parse($(\"#printwalletjson\").html());\r\n for (var i = 0; i < json.length; i++) {\r\n var walletTemplate = $(\'<div\/>\').append($(\"#print-container\").clone());\r\n new QRCode($(walletTemplate).find(\"#paperwalletaddqr\")[0], {\r\n text: json[i][\'address\'],\r\n colorDark: \"#000000\",\r\n colorLight: \"#ffffff\",\r\n correctLevel: QRCode.CorrectLevel.H\r\n });\r\n new QRCode($(walletTemplate).find(\"#paperwalletprivqr\")[0], {\r\n text: json[i][\'private\'],\r\n colorDark: \"#000000\",\r\n colorLight: \"#ffffff\",\r\n correctLevel: QRCode.CorrectLevel.H\r\n });\r\n $(walletTemplate).find(\"#paperwalletadd\").html(json[i][\'address\']);\r\n $(walletTemplate).find(\"#paperwalletpriv\").html(json[i][\'private\']);\r\n $(walletTemplate).find(\"#identicon\").css(\'background-image\',\'url(\' + getBlockie(json[i][\'address\']) +\')\');\r\n walletTemplate = $(walletTemplate).find(\"#print-container\").show();\r\n $(\"body\").append(walletTemplate);\r\n }\r\n setTimeout(function() {\r\n window.print();\r\n }, 2000);\r\n    }\r\n    <\/script>\r\n<\/head>\r\n\r\n<body><span id=\"printwalletjson\" style=\"display: none;\">{{WALLETJSON}}<\/span>\r\n    <div class=\"print-container\" style=\"display: none; margin-bottom: 50px;\" id=\"print-container\"><img src=\"images\/logo-akroma-1.png\" class=\"ether-logo-1\" height=\"100%\" width=\"auto\" \/> <div id=\"identicon\" class=\"addressIdenticon med float\"><\/div>\r\n <img src=\"images\/print-sidebar.png\" height=\"100%\" width=\"auto\" class=\"print-title\" \/>\r\n <div class=\"print-qr-code-1\">\r\n <div id=\"paperwalletaddqr\"><\/div>\r\n <p class=\"print-text\" style=\"padding-top: 25px;\">YOUR ADDRESS<\/p>\r\n <\/div>\r\n <div class=\"print-notes\"><img src=\"images\/notes-bg.png\" width=\"90%;\" height=\"auto\" class=\"pull-left\" \/>\r\n <p class=\"print-text\">AMOUNT \/ NOTES<\/p>\r\n <\/div>\r\n <div class=\"print-qr-code-2\">\r\n <div id=\"paperwalletprivqr\"><\/div>\r\n <p class=\"print-text\" style=\"padding-top: 30px;\">YOUR PRIVATE KEY<\/p>\r\n <\/div>\r\n <div class=\"print-address-container\">\r\n <p><strong>Your Address:<\/strong>\r\n <br \/><span id=\"paperwalletadd\"><\/span><\/p>\r\n <p><strong>Your Private Key:<\/strong>\r\n <br \/><span id=\"paperwalletpriv\"><\/span><\/p>\r\n <\/div>\r\n    <\/div>\r\n<\/body>\r\n\r\n<\/html>\r\n";
     data = data.replace("{{WALLETJSON}}", strJson);
     win.document.write(data);
     win.document.write("<script>generateWallets();</script>");
@@ -49,7 +49,7 @@ globalFuncs.errorMsgs = [
     'Wallet not found. ', // 14
     'Whoops. It doesn\'t look like a proposal with this ID exists yet or there is an error reading this proposal. ', // 15 - NOT USED
     'A wallet with this address already exists in storage. Please check your wallets page. ', // 16
-    'Insufficient funds. Account you try to send transaction from does not have enough funds. Required {} wei and got: {} wei. If sending tokens, you must have 0.01 ETH in your account to cover the cost of gas. ', // 17
+    '(error_17) Insufficient balance. Your gas limit * gas price + amount to send exceeds your current balance. Send more ETH to your account or use the "Send Entire Balance" button. If you believe this is in error, try pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)', // 17
     'All gas would be used on this transaction. This means you have already voted on this proposal or the debate period has ended.', // 18
     'Please enter a valid symbol', // 19
     'Not a valid ERC-20 token', // 20
@@ -64,12 +64,14 @@ globalFuncs.errorMsgs = [
     'Please enter a valid user and password. ', // 29
     'Please enter a valid name (7+ characters, limited punctuation) ', // 30
     'Please enter a valid secret phrase. ', // 31
-    'Could not connect to the node. Try refreshing, using different node in upper right corner, and checking firewall settings. If custom node, check your configs.', // 32
+    'Could not connect to the node. Refresh your page, try a different node (top-right corner), check your firewall settings. If custom node, check your configs.', // 32
     'The wallet you have unlocked does not match the owner\'s address. ', // 33
     'The name you are attempting to reveal does not match the name you have entered. ', // 34
-    'Input address is not checksummed. <a href="https://myetherwallet.groovehq.com/knowledge_base/topics/not-checksummed-shows-when-i-enter-an-address" target="_blank" rel="noopener"> More info</a>', // 35
-    'Enter valid TX hash', // 36
-    'Enter valid hex string (0-9, a-f)' // 37
+    'Input address is not checksummed. <a href="https://myetherwallet.github.io/knowledge-base/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer"> Click here to learn what this means.</a>', // 35
+    'Please enter valid TX hash', // 36
+    'Please enter valid hex string. Hex only contains: 0x, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, a, b, c, d, e, f', // 37
+    'Offer must have either price or reserve set to more than 0', // 38
+    'Bid must be more than the specified minimum' // 39
 ];
 
 // These are translated in the translation files
@@ -85,16 +87,17 @@ globalFuncs.successMsgs = [
 
 // These are translated in the translation files
 globalFuncs.gethErrors = {
-    'Invalid sender': 'GETH_InvalidSender',
-    'Nonce too low': 'GETH_Nonce',
-    'Gas price too low for acceptance': 'GETH_Cheap',
-    'Insufficient balance': 'GETH_Balance',
-    'Account does not exist or account balance too low': 'GETH_NonExistentAccount',
-    'Insufficient funds for gas * price + value': 'GETH_InsufficientFunds',
-    'Intrinsic gas too low': 'GETH_IntrinsicGas',
-    'Exceeds block gas limit': 'GETH_GasLimit',
-    'Negative value': 'GETH_NegativeValue'
+    '(geth-06) Invalid sender\\.' : 'GETH_InvalidSender',
+    "(geth-08) This TX's [nonce](https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html) is too low\\. Try incrementing the nonce by pressing the Generate button again, or [replace the pending transaction](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html)\\.": "GETH_Nonce",
+    '(geth-02) Gas price too low for acceptance\\. Try raising the gas price to 21 GWEI via the dropdown in top-right\\.' : 'GETH_Cheap',
+    '(geth-01) Insufficient balance\\. Your gas limit * gas price + amount to send exceeds your current balance\\. Send more ETH to your account or use the "Send Entire Balance" button\\. If you believe this is in error, try pressing generate again\\. Required (d+) WEI and got: (d+) WEI\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)': 'GETH_Balance',
+    '(geth-09) Account does not exist or account balance too low\\.' : 'GETH_NonExistentAccount',
+    '(geth-04) Insufficient balance\\. Your gas limit * gas price + amount to send exceeds your current balance\\. Send more ETH to your account or use the "Send Entire Balance" button\\. If you believe this is in error, try pressing generate again\\. Required (d+) WEI and got: (d+) WEI\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)': 'GETH_InsufficientFunds',
+    '(geth-05) Intrinsic gas too low\\. Try raising the gas price to 21 GWEI via the dropdown in top-right or the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again.' : 'GETH_IntrinsicGas',
+    '(geth-03) Exceeds block gas limit\\. Transaction cost exceeds current gas limit\\. Limit: (d+) WEI, got: (d+) WEI\\. Please lower the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again\\. [Learn More](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)' : 'GETH_GasLimit',
+    '(geth-07) Negative value\\.': 'GETH_NegativeValue'
 };
+
 
 globalFuncs.gethErrorMsgs = {};
 globalFuncs.getGethMsg = function(str) {
@@ -109,14 +112,14 @@ globalFuncs.getGethMsg = function(str) {
 
 // These are translated in the translation files
 globalFuncs.parityErrors = {
-    "Transaction with the same hash was already imported\\.": "PARITY_AlreadyImported",
-    "Transaction nonce is too low\\. Try incrementing the nonce\\.": "PARITY_Old",
-    "Transaction fee is too low\\. There is another transaction with same nonce in the queue\\. Try increasing the fee or incrementing the nonce\\.": "PARITY_TooCheapToReplace",
-    "There are too many transactions in the queue\\. Your transaction was dropped due to limit\\. Try increasing the fee\\.": "PARITY_LimitReached",
-    "Transaction fee is too low\\. It does not satisfy your node's minimal fee \\(minimal: (\\d+), got: (\\d+)\\)\\. Try increasing the fee\\.": "PARITY_InsufficientGasPrice",
-    "Insufficient funds\\. The account you tried to send transaction from does not have enough funds\\. Required (\\d+) and got: (\\d+)\\.": "ERROR_17",
-    "Transaction cost exceeds current gas limit\\. Limit: (\\d+), got: (\\d+)\\. Try decreasing supplied gas\\.": "PARITY_GasLimitExceeded",
-    "Supplied gas is beyond limit\\.": "PARITY_InvalidGasLimit"
+    "A (parity-01) A transaction with the same hash was already imported. It was probably already broadcast. To avoid duplicate transactions, check your address on [etherscan.io](https://etherscan.io) & wait 10 minutes before attempting to send again. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)\\. This means it was already broadcast. Please check your address on etherscan.io & wait 10 minutes before attempting to send again to avoid duplicate transactions. <a target='_blank' rel='noopener noreferrer' href='https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html'>Learn more</a>": "PARITY_AlreadyImported",
+    "(parity-07) There is already a transaction with this [nonce](https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html)\\. Try incrementing the nonce by pressing the Generate button again, or [replace the pending transaction](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html)\\.": "PARITY_Old",
+    "(parity-04) There is another transaction with same nonce in the queue, or the transaction fee is too low\\. Try incrementing the nonce by clicking the Generate button again\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)\\.": "PARITY_TooCheapToReplace",
+    "(parity-06) There are too many transactions in the queue\\. Your transaction was dropped due to limit\\. Try increasing the gas price\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)\\.": "PARITY_LimitReached",
+    "(parity-08) TX Fee is too low\\. It does not satisfy your node's minimal fee (minimal: (d+) WEI, got: (d+) WEI)\\. Try increasing the gas price and/or gas limit\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)\\.": "PARITY_InsufficientGasPrice",
+    "(parity-03) Insufficient balance\\. The account you tried to send transaction from does not have enough funds\\. If you believe this is in error, try using the 'Send Entire Balance' button, or pressing generate again. Required (d+) WEI and got: (d+) WEI\\. [Learn More](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)\\.": "ERROR_17",
+    "(parity-02) Transaction cost exceeds current gas limit\\. Limit: (d+) WEI, got: (d+) WEI\\. Please lower the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again\\. [Learn More](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)\\.": "PARITY_GasLimitExceeded",
+    "(parity-05) Supplied gas limit is beyond limit\\. Try lowering the gas limit to 21000\\. [Learn More](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)\\.": "PARITY_InvalidGasLimit"
 };
 globalFuncs.parityErrorMsgs = {};
 globalFuncs.getParityMsg = function(str) {
@@ -168,7 +171,7 @@ globalFuncs.stripTags = function(str) {
 };
 globalFuncs.checkAndRedirectHTTPS = function() {
     var host = "myetherwallet.com";
-    var hostw = "https://www.myetherwallet.com";
+    var hostw = "https://wallet.akroma.io";
     var path = window.location.pathname;
     if (host == window.location.host) window.location = hostw + path;
 };
@@ -303,14 +306,14 @@ globalFuncs.saveTokenToLocal = function(localToken, callback) {
         // catch if TOKEN SYMBOL is already in storedTokens
         for (var i = 0; i < storedTokens.length; i++){
             if (storedTokens[i].symbol.toLowerCase().replace(/ /g, '') === localToken.symbol.toLowerCase().replace(/ /g, '')) {
-              throw Error('ERROR: Unable to add a custom token with the same symbol as an existing custom token')
+              throw Error('Unable to add a custom token with the same symbol as an existing custom token. Try clicking the "Load Tokens" button, or choosing a different token symbol')
             }
         }
 
         // catch if CONTRACT ADDRESS is already in storedTokens
         for (var i = 0; i < storedTokens.length; i++){
             if (storedTokens[i].contractAddress.toLowerCase().replace(/ /g, '') === localToken.contractAdd.toLowerCase().replace(/ /g, '')) {
-              throw Error('ERROR: Unable to add custom token. It has the same address as custom token ' + storedTokens[i].symbol + '.')
+              throw Error('Unable to add custom token. It has the same address as custom token ' + storedTokens[i].symbol + '. Try clicking the "Load Tokens" button to see it. :)')
             }
         }
 
@@ -318,7 +321,7 @@ globalFuncs.saveTokenToLocal = function(localToken, callback) {
 
         // catch if TOKEN SYMBOL is already in defaultTokens
         if (globalFuncs.doesTokenExistInDefaultTokens(localToken, defaultTokensAndNetworkType)) {
-          throw Error('ERROR: Unable to add a duplicate custom token.')
+          throw Error('This token is already added as a default token. Try clicking the "Load Tokens" button to see it. :)')
         }
 
         storedTokens.push({
@@ -329,7 +332,7 @@ globalFuncs.saveTokenToLocal = function(localToken, callback) {
             network: globalFuncs.getDefaultTokensAndNetworkType().networkType
         });
 
-        localStorage.setItem("localTokens", JSON.stringify(storedTokens));
+        globalFuncs.localStorage.setItem("localTokens", JSON.stringify(storedTokens));
 
         callback({
           error: false
@@ -385,45 +388,4 @@ globalFuncs.localStorage = {
         }
     }
 
-
-/* Check for 'localStorage' or 'sessionStorage' */
-/*
-globalFuncs.storageAvailable = function(type) {
-    try {
-        var storage = window[type],
-            x = '__storage_test__';
-        storage.setItem(x, x);
-        storage.removeItem(x);
-        return true;
-    }
-    catch(e) {
-        return e instanceof DOMException && (
-            // everything except Firefox
-            e.code === 22 ||
-            // Firefox
-            e.code === 1014 ||
-            // test name field too, because code might not be present
-            // everything except Firefox
-            e.name === 'QuotaExceededError' ||
-            // Firefox
-            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-            // acknowledge QuotaExceededError only if there's something already stored
-            storage.length !== 0;
-    }
-
-}
-*/
-
-    // globalFuncs.getUrlParameter = function getUrlParameter(url) {
-    //   // get query string from url (optional) or window
-    //   var queryString = url ? url.split('=')[1] : window.location.search.slice(1);
-    //   return queryString;
-    // }
-    // globalFuncs.setUrlParameter = function setUrlParameter(value) {
-    //   //In case url contains already a parameter remove parameter
-    //   if(window.location.href.indexOf('=') != -1) {
-    //       location.href = location.href.substr(0,window.location.href.indexOf('='));
-    //   }
-    //   location.href = location.href + "=" + value
-    // }
 module.exports = globalFuncs;

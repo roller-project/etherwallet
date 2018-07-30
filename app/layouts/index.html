@@ -1,4 +1,3 @@
-
 @@include( '../includes/header.tpl', { "site": "mew" } )
 
 <section class="container" style="min-height: 50%" ng-controller='viewCtrl'>
@@ -9,9 +8,9 @@
 
     @@include( '../includes/sendTx.tpl',             { "site": "mew" } )
 
-    @@include( '../includes/offlineTx.tpl',          { "site": "mew" } )
+    @@include( '../includes/swap.tpl',               { "site": "mew" } )
 
-    @@include( '../includes/contracts.tpl',          { "site": "mew" } )
+    @@include( '../includes/offlineTx.tpl',          { "site": "mew" } )
 
     @@include( '../includes/viewWalletInfo.tpl',     { "site": "mew" } )
 
@@ -23,17 +22,7 @@
 
   </div>
 
-
   @@include('../includes/alerts.tpl')
-
-
-  <!--
-  <section class="loading-wrap" ng-hide="1==1">
-    <div class="loading">
-      <img src="images/loading.gif" />
-      <h1> Loading... </h1>
-  </section>
-  -->
 
 </section>
 

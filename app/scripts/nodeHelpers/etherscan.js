@@ -1,6 +1,6 @@
 'use strict';
 var etherscan = function() {}
-etherscan.SERVERURL = "https://poseidon.pirl.io/explorer/";
+etherscan.SERVERURL = "https://api.etherscan.io/api";
 etherscan.pendingPosts = [];
 etherscan.config = {
     headers: {

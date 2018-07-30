@@ -8,7 +8,7 @@ var txStatusCtrl = function($scope) {
         notFound: 1,
         mined: 2
     }
-    var MIN_GAS = 30;
+    var MIN_GAS = 41;
     $scope.txInfo = {
         status: null, // notFound foundInPending foundOnChain
         hash: globalFuncs.urlGet('txHash') == null ? "" : globalFuncs.urlGet('txHash'),
@@ -34,13 +34,15 @@ var txStatusCtrl = function($scope) {
     var txToObject = function(tx) {
         var txStatus = $scope.txStatus;
         if (tx) {
+            console.log('txToObject')
+            console.log(tx)
             $scope.txInfo = {
                 status: tx.blockNumber ? txStatus.mined : txStatus.found,
                 hash: tx.hash,
                 from: ethUtil.toChecksumAddress(tx.from),
                 to: tx.to ? ethUtil.toChecksumAddress(tx.to) : '',
                 value: new BigNumber(tx.value).toString(),
-                valueStr: etherUnits.toEther(tx.value, 'wei') + " ETH",
+                valueStr: etherUnits.toEther(tx.value, 'wei') + " Akroma",
                 gasLimit: new BigNumber(tx.gas).toString(),
                 gasPrice: {
                     wei: new BigNumber(tx.gasPrice).toString(),
@@ -51,12 +53,12 @@ var txStatusCtrl = function($scope) {
                 nonce: new BigNumber(tx.nonce).toString()
             }
             if ($scope.txInfo.status == txStatus.found) {
-                var _gasPrice = new BigNumber($scope.txInfo.gasPrice.wei).mul(1.1);
+                var _gasPrice = new BigNumber($scope.txInfo.gasPrice.wei).mul(1.1).floor();
                 if (_gasPrice.lt(etherUnits.getValueOfUnit('gwei') * MIN_GAS)) _gasPrice = new BigNumber(etherUnits.getValueOfUnit('gwei') * MIN_GAS)
                 $scope.parentTxConfig = {
                     to: $scope.txInfo.from,
                     value: '0',
-                    sendMode: 'ether',
+                    sendMode: 'trinity',
                     tokensymbol: '',
                     readOnly: false,
                     gasPrice: _gasPrice.toString(),

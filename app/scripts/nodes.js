@@ -28,11 +28,11 @@ nodes.nodeList = {
         'blockExplorerAddr': 'http://explorer.roller.today:3000/addr/[[address]]',
         'type': nodes.nodeTypes.ROLLER,
         'eip155': true,
-        'chainId': 3125659152,
+        'chainId': 200625,
         'tokenList': require('./tokens/rolTokens.json'),
         'abiList': require('./abiDefinitions/rolAbi.json'),
         'service': 'Roller Offical',
-        'lib': new nodes.customNode('https://wallrpc.pirl.io', '')
+        'lib': new nodes.customNode('https://rpc.akroma.io', '')
     }
 };
 

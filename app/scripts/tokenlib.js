@@ -5,7 +5,7 @@ var Token = function(contractAddress, userAddress, symbol, decimal, type) {
     this.symbol = symbol;
     this.decimal = decimal;
     this.type = type;
-    this.balance = "Click to Load";
+    this.balance = "loading";
 };
 Token.balanceHex = "0x70a08231";
 Token.transferHex = "0xa9059cbb";
@@ -31,7 +31,6 @@ Token.prototype.getBalance = function() {
 Token.prototype.getBalanceBN = function() {
     return this.balanceBN;
 };
-
 Token.prototype.setBalance = function(callback) {
     var balanceCall = ethFuncs.getDataObj(this.contractAddress, Token.balanceHex, [ethFuncs.getNakedAddress(this.userAddress)]);
     var parentObj = this;
@@ -48,7 +47,6 @@ Token.prototype.setBalance = function(callback) {
         }
     });
 };
-
 Token.getTokenByAddress = function(toAdd) {
     toAdd = ethFuncs.sanitizeHex(toAdd);
     for (var i = 0; i < Token.popTokens.length; i++) {

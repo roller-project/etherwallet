@@ -46,16 +46,6 @@
     "payable": false,
     "type": "function"
 }, {
-    "constant":true,
-    "inputs":[],
-    "name":"previousOwner",
-    "outputs":[{
-        "name":"",
-        "type":"address"
-    }],
-    "payable":false,
-    "type":"function"
-}, {
     "constant": false,
     "inputs": [{
         "name": "refundRatio",

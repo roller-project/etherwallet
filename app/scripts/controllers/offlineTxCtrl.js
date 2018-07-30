@@ -1,7 +1,5 @@
 'use strict';
 var offlineTxCtrl = function($scope, $sce, walletService) {
-    $scope.gpDropdown = false;
-    $scope.gasPriceDef = globalFuncs.localStorage.getItem('gasPriceDef') || 'WEI';
     $scope.ajaxReq = ajaxReq;
     walletService.wallet = null;
     walletService.password = '';
@@ -45,19 +43,6 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
         if (walletService.wallet == null) return;
         $scope.wallet = walletService.wallet;
     });
-
-    $scope.changePrice = function(price) {
-      $scope.gasPriceDef = price;
-      globalFuncs.localStorage.setItem('gasPriceDef', price);
-      $scope.gpDropdown = false;
-    }
-
-    $scope.convertPrice = function(gasPrice) {
-      if($scope.gasPriceDef === 'GWEI') {
-        return etherUnits.toWei(gasPrice,$scope.gasPriceDef.toLowerCase());
-      } return gasPrice;
-    }
-
     $scope.setTokens = function() {
         $scope.tokenObjs = [];
         for (var i = 0; i < $scope.tokens.length; i++) {
@@ -80,11 +65,6 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
             });
         }
     }
-    $scope.$watch('gasPriceDef', function(newValue, oldValue) {
-        if(newValue == "WEI" && oldValue == "GWEI") $scope.gasPriceDec = etherUnits.toWei($scope.gasPriceDec, 'gwei');
-        else if(newValue == "GWEI" && oldValue == "WEI") $scope.gasPriceDec = etherUnits.toGwei($scope.gasPriceDec,'wei');
-        else $scope.gasPriceDec = 0;
-    });
     $scope.$watch('tx', function() {
         $scope.showRaw = false;
 
@@ -137,7 +117,7 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
         var txData = uiFuncs.getTxData($scope);
         txData.isOffline = true;
         txData.nonce = ethFuncs.sanitizeHex(ethFuncs.decimalToHex($scope.nonceDec));
-        txData.gasPrice = ethFuncs.sanitizeHex(ethFuncs.decimalToHex($scope.convertPrice($scope.gasPriceDec)));
+        txData.gasPrice = ethFuncs.sanitizeHex(ethFuncs.decimalToHex($scope.gasPriceDec));
         if ($scope.tokenTx.id != 'ether') {
             txData.data = $scope.tokenObjs[$scope.tokenTx.id].getData($scope.tx.to, $scope.tx.value).data;
             txData.to = $scope.tokenObjs[$scope.tokenTx.id].getContractAddress();

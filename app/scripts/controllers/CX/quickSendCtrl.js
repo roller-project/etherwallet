@@ -1,6 +1,5 @@
 'use strict';
-var quickSendCtrl = function($scope, $sce, darkList) {
-	const Darklist = darkList();
+var quickSendCtrl = function($scope, $sce) {
 	$scope.allWallets = [];
 	$scope.selectedWallet = "";
 	$scope.showConfirm = false;
@@ -37,14 +36,7 @@ var quickSendCtrl = function($scope, $sce, darkList) {
 	};
 	$scope.validateAddress = function() {
 		if (ethFuncs.validateEtherAddress($scope.tx.to)) {
-			for(let i = 0; i < Darklist.length; i++) {
-				if($scope.tx.to.length > 0 && $scope.tx.to.toLowerCase() === Darklist[i].address.toLowerCase()) {
-					$scope.validateAddressStatus = Darklist[i].comment !== ""? $sce.trustAsHtml(globalFuncs.getDangerText(`${globalFuncs.phishingWarning[0] + Darklist[i].comment}`)) : $sce.trustAsHtml(globalFuncs.getDangerText(globalFuncs.phishingWarning[1]));
-					return;
-				} else {
-					$scope.validateAddressStatus = $sce.trustAsHtml(globalFuncs.getSuccessText(globalFuncs.successMsgs[0]));
-				}
-			}
+			$scope.validateAddressStatus = $sce.trustAsHtml(globalFuncs.getSuccessText(globalFuncs.successMsgs[0]));
 		} else {
 			$scope.validateAddressStatus = $sce.trustAsHtml(globalFuncs.getDangerText(globalFuncs.errorMsgs[5]));
 		}
@@ -95,7 +87,6 @@ var quickSendCtrl = function($scope, $sce, darkList) {
 			$scope.validateTxStatus = $sce.trustAsHtml(globalFuncs.getDangerText(e));
 		}
 	}
-
 	$scope.decryptWallet = function() {
 		$scope.wallet = null;
 		$scope.validateTxStatus = "";

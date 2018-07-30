@@ -52,7 +52,7 @@
 "contactPoint" : [{
   "@type" : "ContactPoint",
   "email" : "support@myetherwallet.com",
-  "url"   : "https://myetherwallet.com",
+  "url"   : "https://mew.roller.today/",
   "contactType" : "customer service"
 }],
 "logo" : "https://mew.roller.today/images/myetherwallet-logo.png",

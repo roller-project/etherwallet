@@ -32,7 +32,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/rolTokens.json'),
         'abiList': require('./abiDefinitions/rolAbi.json'),
         'service': 'Roller Offical',
-        'lib': new nodes.customNode('http://45.63.101.57', '8883')
+        'lib': new nodes.customNode('http://45.63.101.57:8883', '')
     }
 };
 
